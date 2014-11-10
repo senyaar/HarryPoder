@@ -2,6 +2,16 @@
     background-color: #558C89;
     margin-top: 0;
     padding: 20px 20px 60px 20px;
+    background-image: url(../cat_vector);
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: 85%;
+}
+
+.page-header background-image {
+max-width: 10%;
+max-height: : 10%;
+
 }
 
 .page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
@@ -12,17 +22,40 @@
 
 .content {
     margin-left: 40px;
+    margin-right: 40px;
+    margin-bottom: 40px;
 }
 
+.stretch {
+    -moz-column-count: 3;
+    -moz-column-gap: 10px;
+    -webkit-column-count: 3;
+    -webkit-column-gap: 10px;
+    column-count: 3;
+    column-gap: 10px;
+    width: 100%x; 
+    height: 75%;
+}
+
+.stretch.panel {
+    display: inline;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 100%;
+    width: 100%;
+}
+
+
 h1 {
-    font-family: 'Georgia', cursive;
+    font-family: 'Merienda';
     color: #D9853B;
+    font-size: 28pt;
 }
 
 h2, h3, h4 {
     color: #74AFAD;
-	font-size: 16px;
-	font-family: 'Arial';
+	font-size: 20px;
+	font-family: 'Shadows Into Light';
     font-weight: bold;
 }
 
@@ -33,6 +66,7 @@ h2, h3, h4 {
 
 .save {
     float: right;
+    margin-bottom: 40px;
 }
 
 .post-form textarea, .post-form input {

@@ -1,13 +1,17 @@
 {%extends 'finder/base.html' %}
 
 {% block content %}
+
+    <div class="stretch">
 		{% for kitty in cats %}
-		    <div>
+		    <div class="panel">
 		        <h1><a href="{% url 'finder.views.cat_detail' pk=kitty.pk %}">{{ kitty.name }}</a></h1>
 		        <h2> {{ kitty.gender }} | {{kitty.age}} | {{ kitty.breed }}</h2>
 		        <p> <i>{{kitty.location.name}}</i> </p>
 		    </div>
 		{% endfor %}
 
+
+</div>
 {% endblock content %}
 

@@ -1,0 +1,276 @@
+@charset "utf-8";
+
+/**
+ * Dreamweaver look a like highlighting colors.
+ *
+ * If you want to customize this file, copy it to your current theme directory
+ *  first. Then start editing the copied file.
+ *
+ * @version 1.2
+ * @author  Frank Verhoeven <info@frank-verhoeven.com>
+ */
+
+ .fvch-hide-if-no-js {
+     display: none !important;
+ }
+
+.fvch-codeblock {
+	background: #242520 !important;
+	clear: both;
+	font-weight: normal;
+	margin: 0;
+	padding: 0 !important;
+	margin-bottom: 1em;
+	border-radius: 4px;
+	overflow: auto;
+    position: relative;
+}
+
+.fvch-codeblock ::selection{
+	background: #a7a69d;
+	color: inherit;
+}
+
+.fvch-codeblock table,
+.fvch-codeblock table tr,
+.fvch-codeblock table tr td {
+	background: none transparent !important;
+    padding: 0;
+    margin: 0;
+}
+
+.fvch-toolbox {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+    border-left: 1px solid #e2e2e2;
+    border-bottom: 1px solid #e2e2e2;
+    border-bottom-left-radius: 4px;
+    border-top-right-radius: 4px;
+    background: #fff;
+    padding: 3px 6px 0;
+}
+
+.fvch-codeblock:hover .fvch-toolbox {
+    display: block;
+}
+
+.fvch-toolbox .fvch-toolbox-icon {
+    border: none !important;
+    background: none !important;
+    cursor: pointer !important;
+    margin: 0 4px 0 0 !important;
+    padding: 2px !important;
+}
+
+.fvch-toolbox .fvch-toolbox-icon:last-child {
+    margin-right:  0 !important;
+}
+
+.fvch-codeblock pre {
+	background: none transparent !important;
+	font-family:  "Monaco", "Courier New", Courier, monospace !important;
+	font-size:  13px !important;
+	line-height: 1.4em !important;
+	padding:  0 5px 0 10px !important;
+	margin: 0 !important;
+	text-align:  left;
+	white-space: pre;
+}
+
+.fvch-line-numbers pre {
+	background: #242520;
+	box-shadow: 5px 0 8px #000;
+	padding: 10px 15px 10px 10px !important;
+	text-align: right;
+	font-weight: bold;
+	color: #8b8c86;
+}
+
+.fvch-code{
+	background: none transparent !important
+}
+
+/**
+ * CSS
+ */
+.css {
+	color: #9edf51;
+}
+.css-background {
+	background-color: #fff;
+}
+.css-import {
+	color: #fe215f;
+}
+.css-media {
+	color: #fe215f;
+}
+.css-comment {
+	color: #999;
+}
+.css-important {
+	color: #fe215f;
+}
+.css-property {
+	color: #65cfde;
+}
+.css-selector {
+	color: #fff;
+}
+.css-string {
+	color: #060;
+	font-weight: normal;
+}
+.css-value {
+	color: #ab8bde;
+}
+.css-rest {
+	color: #f0f;
+}
+
+/**
+ * (x)HTML
+ */
+.html {
+	color: #fff;
+}
+.html-anchor-element {
+	color: #fe215f;
+}
+.html-attribute {
+	color: #ece089;
+}
+.html-comment {
+	color: #999;
+}
+.html-form-element {
+	color: #fe215f;
+}
+.html-image-element {
+	color: #fe215f;
+}
+.html-object-element {
+	color: #fe215f;
+}
+.html-other-element {
+	color: #fe215f;
+}
+.html-script-element {
+	color: #fe215f;
+}
+.html-special-char {
+	color: #000;
+}
+.html-style-element {
+	color: #fe215f;
+}
+.html-table-element {
+	color: #fe215f;
+}
+.html-text {
+	color: #000;
+}
+
+/**
+ * PHP
+ */
+.php {
+	color: #000;
+	font-weight: normal;
+}
+.php-script-tag {
+	color: #f00;
+}
+.php-comment {
+	color: #f90;
+}
+.php-constant {
+	color: #520;
+}
+.php-function {
+	color: #00f;
+}
+.php-number {
+	color: #f00;
+}
+.php-operator {
+	color: #00f;
+}
+.php-brackets {
+	color: #009;
+}
+.php-keyword {
+	color: #006600;
+}
+.php-string {
+	color: #c00;
+}
+.php-var-type {
+	color: #099;
+}
+.php-var {
+	color: #06f;
+}
+
+/**
+ * XML
+ */
+.xml {
+}
+.xml-string {
+	color: #060;
+}
+.xml-comment, .xml-comment span {
+	color: #999;
+}
+.xml-number {
+	color: #f00;
+}
+.xml-element {
+	color: #009;
+}
+.xml-text {
+	color: #000;
+}
+
+/**
+ * JavaScript
+ */
+.js {
+	color: #fe216c;
+}
+.js-string {
+	color: #fe215f;
+}
+.js-bracket {
+	color: #fff;
+}
+.js-client-keyword {
+	color: #50d4f2;
+}
+.js-comment {
+	color: #999;
+}
+.js-function-keyword {
+	color: #50d4f2;
+}
+.js-native-keyword {
+	color: #fff;
+}
+.js-number {
+	color: #c079d3;
+}
+.js-operator {
+	color: #fe216c;
+}
+.js-regexp {
+	color: #060;
+}
+.js-reserved-keyword {
+	color: #65cfde;
+}
+.js-string {
+	color: #ece089;
+}

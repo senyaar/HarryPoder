@@ -1,0 +1,1402 @@
+<!DOCTYPE html>
+<!-- saved from url=(0062)http://sickdesigner.com/masonry-css-getting-awesome-with-css3/ -->
+<html lang="en-US"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta charset="UTF-8">
+        <title>Sickdesigner.com › Masonry in CSS</title>
+        <meta name="description" content="Portfolio, personal work and blog of web designer Radu Chelariu.">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta name="author" content="Radu Chelariu">
+        
+        <link rel="author" href="http://sickdesigner.com/masonry-css-getting-awesome-with-css3/humans.txt">
+        <link rel="Shortcut Icon" type="image/ico" href="http://sickdesigner.com/wp-content/themes/sick2012/img/favicon.png">
+        <link rel="stylesheet" type="text/css" media="screen,projection" href="./Sickdesigner.com › Masonry in CSS_files/style.css">   
+            
+        <script type="text/javascript" async="" src="./Sickdesigner.com › Masonry in CSS_files/ga.js"></script><script type="text/javascript" src="./Sickdesigner.com › Masonry in CSS_files/html5.js"></script> 
+        <script type="text/javascript" src="./Sickdesigner.com › Masonry in CSS_files/jquery.min.js"></script>
+        <script type="text/javascript" src="./Sickdesigner.com › Masonry in CSS_files/jQueryRotateCompressed.2.1.js"></script>
+        <script type="text/javascript" src="./Sickdesigner.com › Masonry in CSS_files/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="./Sickdesigner.com › Masonry in CSS_files/jquery.bgpos.js"></script>
+
+        <!--[if lt IE 9]>
+            <style type="text/css">
+                *{ display: none } /* Honey badger! */
+            </style>
+        <![endif]-->
+        <link rel="alternate" type="application/rss+xml" title="Sickdesigner.com » Masonry in CSS Comments Feed" href="http://sickdesigner.com/masonry-css-getting-awesome-with-css3/feed/">
+<link rel="stylesheet" id="fvch-styles-css" href="./Sickdesigner.com › Masonry in CSS_files/fvch-styles.css" type="text/css" media="all">
+<script type="text/javascript" src="./Sickdesigner.com › Masonry in CSS_files/jquery.js"></script>
+<script type="text/javascript" src="./Sickdesigner.com › Masonry in CSS_files/jquery-migrate.min.js"></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://sickdesigner.com/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://sickdesigner.com/wp-includes/wlwmanifest.xml"> 
+<link rel="next" title="Breaking the line break" href="http://sickdesigner.com/breaking-the-line-break/">
+<meta name="generator" content="WordPress 3.7.4">
+<link rel="canonical" href="./Sickdesigner.com › Masonry in CSS_files/Sickdesigner.com › Masonry in CSS.html">
+<link rel="shortlink" href="http://sickdesigner.com/?p=1661">
+        <style type="text/css">
+            .fvch-codeblock {
+                background: #fff;
+            }
+            .fvch-codeblock pre, .fvch-line-numbers pre {
+                background: #fff;
+                line-height: 1.3em;
+                font-family: 'Courier New', Courier, monospace;
+                font-size: 12px;
+            }
+            .fvch-line-numbers pre {
+                background: #e2e2e2;
+            }
+        </style>
+        <meta name="generator" content="FV Code Highlighter">
+        
+<!-- platinum seo pack 1.3.7 -->
+<meta name="robots" content="index,follow,noodp,noydir">
+<meta name="description" content="Use only a few clever lines of CSS to create a Masonry or Pinterest style layout.">
+<meta name="keywords" content="column-count,columns,css,css3,jquery,layout,masonry,pinterest,webkit,html-css">
+<link rel="canonical" href="./Sickdesigner.com › Masonry in CSS_files/Sickdesigner.com › Masonry in CSS.html">
+<!-- /platinum one seo pack -->
+
+        <script src="./Sickdesigner.com › Masonry in CSS_files/ga(1).js"></script>
+    </head>
+    <body class="single single-post postid-1661 single-format-standard">
+        <div id="wrap">
+            
+
+
+            <section id="card" class="blogtitle">
+                <h2><a href="http://sickdesigner.com/">Sick<span>designer<i>.com</i></span></a></h2>
+                <p>The work &amp; fun of web designer Radu Chelariu.</p>
+                <span id="start">
+                    <em>Menu</em>
+                </span>
+                <nav id="menu" style="opacity: 1; width: 250px; margin-right: -1px;">
+                    <a href="http://sickdesigner.com/">Home</a>
+                    <a href="http://sickdesigner.com/work">Work</a>
+                    <span>Fun</span>
+                    <a class="active" href="http://sickdesigner.com/index.php/blog-posts">Blog</a>
+                </nav>
+                <footer>
+                    <div class="inside">
+                        <ol>
+                            <li><a href="http://twitter.com/sickdesigner/">Twitter</a></li>
+                            <li><a href="https://www.facebook.com/pages/Sickdesigner/325646186371">Facebook</a></li>
+                            <li><a href="http://dribbble.com/sickdesigner/">Dribbble</a></li>
+                            <li><a href="http://www.flickr.com/people/sickdesigner/">Flickr</a></li>
+                        </ol>
+                        <nav>
+                            <span>Contact</span>
+                        </nav>
+                    </div>
+                </footer>  
+            </section>
+            <section id="fun" style="top: -900px;">
+                <span class="close">X</span>
+                <h2>Experiments, ideas &amp; things done just for the fun of it</h2>
+                <ul>
+                    <li>
+                        <a href="http://busteco.com/morse">#morsetweet</a>
+                        <p>For the 168th anniversary of the first official telegram I made this little diddy. Made at &amp; for <a class="bluedabadeedabada" href="http://sickdesigner.com/masonry-css-getting-awesome-with-css3/#">Busteco</a></p>
+                    </li>
+                    <li>
+                        <a href="http://sickdesigner.com/resources/HTML5-starter-pack/index.html">HTML5 Starter Pack</a>
+                        <p>A simple and useful HTML boilerplate made in 2010, last updated in 2012.</p>
+                    </li>
+                    <li>
+                        <a href="http://sickdesigner.com/demo/display-property/index.html">Display my property</a>
+                        <p>In an attempt to lift any mystery regarding this widely used CSS property, I made an old computer.</p>
+                    </li>
+                    <li>
+                        <a href="http://sickdesigner.com/demo/a-tribute-to-adobe-photoshop/a-tribute-to-adobe-photoshop.html">CSS3 Photoshop icons</a>
+                        <p>Back in 2009, during the Just-CSS-No-Images craze, I joined the masses and made some Photoshop icons with just CSS.</p>
+                    </li>
+                </ul>
+            </section> 
+            <section id="contact" class="ui-draggable" style="-webkit-transform: rotate(-25deg);">
+                <span class="close">X</span>
+                <h2>Contact me</h2>
+                <p>
+                    Feel free to get in touch with me if you want to hire me (design work, speaking engagements, guest posting), interviews, if you have a problem with either Photoshop, HTML, CSS or Wordpress, or if you just want to talk about design. I'm also available on <a href="https://twitter.com/#!/sickdesigner">Twitter</a>, <a href="http://www.facebook.com/pages/Sickdesigner/325646186371">Facebook</a> or <a href="https://plus.google.com/101001365426867194516/posts">Google+</a>, if that's more your game. 
+                </p>
+                <p>
+                    But, for the love of all that is Bauhaus, please <strong>do not</strong> contact me if you're selling something or about link exchanges and that kind of stuff. I will not reply to these requests. 
+                </p>
+                <div class="frm_forms" id="frm_form_3_container">
+<form enctype="multipart/form-data" method="post" class="frm-show-form " id="form_d3irhx">
+<div class="frm_form_fields">
+<fieldset>
+<div>
+<input type="hidden" name="frm_action" value="create">
+<input type="hidden" name="form_id" value="3">
+<input type="hidden" name="form_key" value="d3irhx">
+<div id="frm_field_17_container" class="right-field form-field  frm_required_field  frm_top_container">
+    <label class="message frm_pos_ frm_primary_label">Message
+        <span class="frm_required">*</span>
+    </label>
+    <textarea name="item_meta[17]" id="field_2pe6hf" rows="5" class=" required"></textarea> 
+    
+
+    
+</div>
+<div id="frm_field_13_container" class="form-field  frm_required_field  frm_top_container">
+    <label class="frm_pos_ frm_primary_label">Name
+        <span class="frm_required">*</span>
+    </label>
+    <input type="text" id="field_4c28mg" name="item_meta[13]" value="" class=" required">
+    
+
+    
+</div>
+<div id="frm_field_14_container" class="form-field  frm_required_field  frm_top_container">
+    <label class="email frm_pos_ frm_primary_label">Email
+        <span class="frm_required">*</span>
+    </label>
+    <input type="text" id="field_87u3ag" name="item_meta[14]" value="" class=" required">
+    
+
+    
+</div>
+<input type="hidden" name="item_key" value="">
+</div>
+</fieldset>
+</div>
+
+<p class="submit">
+<input type="submit" value="Send it!">
+</p>
+</form>
+</div>            </section> 
+
+			<section id="post">
+                <div class="inside">
+    					       
+    				<article role="main">
+    					<section class="article-wrap">
+                                <time>May 3, 2011</time>
+    							<h1>Masonry in CSS</h1>
+    							<section class="post-content">
+    								<p>Gotta tell you folks: this one’s been bugging me for a week now. I’m sure everyone is familiar with <a title="David&#39;s website" href="http://desandro.com/" target="_blank">David DeSandro</a>‘s awesome jQuery plugin, <a title="jQuery Masonry" href="http://desandro.com/resources/jquery-masonry/" target="_blank">Masonry</a>. Well, what this is is two things. First, it’s an homage to <a title="David&#39;s Twitter" href="http://twitter.com/#!/desandro" target="_blank">David</a> himself and the awesome work that he does. Second, it’s a kick ass, super simple CSS technique that mimics what Masonry does. With just CSS.</p>
+<h3>The all mighty columns</h3>
+<p>The solution is so simple that it gave me a brain freeze: CSS columns. Granted, their purpose is to display text in columns like a newspaper, but their display mode is exactly what’s needed to recreate the Masonry effect. But let’s get down to the code. What do you need, you say?</p>
+<h4>The basic HTML</h4>
+<div id="fvch-codeblock-0" class="fvch-codeblock">
+<table>
+<tbody><tr>
+<td class="fvch-line-numbers">
+<pre>1
+2
+3
+4
+5
+6
+</pre>
+</td>
+<td class="fvch-code">
+<pre id="fvch-code-0"><span class="html"><span class="html-other-element">&lt;div&gt;</span>
+<span class="html-anchor-element">&lt;a href=<span class="html-attribute">"#"</span>&gt;</span>Whatever stuff you want to put in here.<span class="html-anchor-element">&lt;/a&gt;</span>
+<span class="html-anchor-element">&lt;a href=<span class="html-attribute">"#"</span>&gt;</span>Whatever stuff you want to put in here.<span class="html-anchor-element">&lt;/a&gt;</span>
+<span class="html-anchor-element">&lt;a href=<span class="html-attribute">"#"</span>&gt;</span>Whatever stuff you want to put in here.<span class="html-anchor-element">&lt;/a&gt;</span>
+...and so on and so forth ad nauseum.
+<span class="html-other-element">&lt;/div&gt;</span></span></pre>
+</td>
+</tr>
+</tbody></table>
+</div>
+<h4>And the CSS magic</h4>
+<div id="fvch-codeblock-1" class="fvch-codeblock">
+<table>
+<tbody><tr>
+<td class="fvch-line-numbers">
+<pre>1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+</pre>
+</td>
+<td class="fvch-code">
+<pre id="fvch-code-1"><span class="css">div{
+    <span class="css-property">-moz-column-count<span class="css-selector">:</span><span class="css-value"> 3</span></span>;
+    <span class="css-property">-moz-column-gap<span class="css-selector">:</span><span class="css-value"> 10px</span></span>;
+    <span class="css-property">-webkit-column-count<span class="css-selector">:</span><span class="css-value"> 3</span></span>;
+    <span class="css-property">-webkit-column-gap<span class="css-selector">:</span><span class="css-value"> 10px</span></span>;
+    <span class="css-property">column-count<span class="css-selector">:</span><span class="css-value"> 3</span></span>;
+    <span class="css-property">column-gap<span class="css-selector">:</span><span class="css-value"> 10px</span></span>;
+    <span class="css-property">width<span class="css-selector">:</span><span class="css-value"> 480px</span></span>; }
+
+    div a{
+        <span class="css-property">display<span class="css-selector">:</span><span class="css-value"> inline-block</span></span>; <span class="css-comment">/* Display inline-block, and absolutely NO FLOATS! */</span>
+        <span class="css-property">margin-bottom<span class="css-selector">:</span><span class="css-value"> 20px</span></span>;
+        <span class="css-property">width<span class="css-selector">:</span><span class="css-value"> 100%</span></span>; }</span></pre>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p>An interesting fact: the width of the elements within the columned container is not relative to the width of the parent, but the width of the column. In the case of the example above width: 100% actually translates to 150px, not 480px (the width of the parent).</p>
+<h4>Fallbacks and browser compatibility</h4>
+<p>Of course, our friends at Microsoft have taken good care to not provide support for CSS columns. Not even in IE9! In this case, I recommend slapping in David’s awesome plugin like so:</p>
+<div id="fvch-codeblock-2" class="fvch-codeblock">
+<table>
+<tbody><tr>
+<td class="fvch-line-numbers">
+<pre>1
+2
+3
+</pre>
+</td>
+<td class="fvch-code">
+<pre id="fvch-code-2"><span class="html"><span class="html-comment">&lt;!--[if lte IE 9]&gt;
+&lt;script type="text/javascript" src="js/jquery.masonry.min.js"&gt;&lt;/script&gt;
+&lt;![endif]--&gt;</span></span></pre>
+</td>
+</tr>
+</tbody></table>
+</div>
+<p>In Microsoft’s defense, for what it’s worth, my technique does work (well, even!) in the IE10 Platform Preview. Hopefully they’ll leave support for columns in the final version, <del>which could be released as early as next year</del> which will see a final release when I’ll be able to lick the back of my own head.</p>
+<p>I’m guessing there’s no point in mentioning that this works (brilliantly) in Gecko and Webkit browsers (Mozilla, Chrome, Safari). Opera does weird things that I don’t quite understand yet, but does an acceptable job of rendering columns (it just has trouble with the gaps and all).</p>
+<p><del>This is usually where you’d find a link to a demo page. This time, however, I direct you to the homepage of this site. Yes, I used it live. I have that much confidence in this. Enjoy, kids!</del> Since the new design doesn’t use this technique, I put together a demo page here:<br>
+<a class="demo" href="http://sickdesigner.com/demo/css-masonry/css-masonry.html" title="Masonry CSS demo page">Demo</a></p>
+<p><i>Cheers, all!</i></p>
+    							</section>
+    					</section>
+    				</article>
+                    <div id="comments">
+                        
+<!-- You can start editing here. -->
+
+	<h3 id="comments">68 Comments so far</h3>
+
+<ol class="commentlist">
+
+
+		<li class="comment even thread-even depth-1 parent" id="comment-1338">
+				<div id="div-comment-1338" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt="" src="./Sickdesigner.com › Masonry in CSS_files/5982941cf85cecc8254ec2a4f1c812ff" class="avatar avatar-32 photo" height="32" width="32">			<cite class="fn"><a href="http://www.marcofolio.net/" rel="external nofollow" class="url">Marco</a></cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://sickdesigner.com/masonry-css-getting-awesome-with-css3/#comment-1338">
+			May 3 at 6:55 pm</a>		</div>
+
+		<p>I actually totally “forgot” about the inline-block, since IE doesn’t really like it. But this is one pretty nifty solution in combination with the columns that it HAS to be used, well done!</p>
+
+		<div class="reply">
+			<a class="comment-reply-link" href="http://sickdesigner.com/masonry-css-getting-awesome-with-css3/?replytocom=1338#respond" onclick="return addComment.moveForm(&quot;div-comment-1338&quot;, &quot;1338&quot;, &quot;respond&quot;, &quot;1661&quot;)">Reply</a>		</div>
+				</div>
+		<ul class="children">
+		<li class="comment byuser comment-author-radu bypostauthor odd alt depth-2" id="comment-1339">
+				<div id="div-comment-1339" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt="" src="./Sickdesigner.com › Masonry in CSS_files/96fd62089ba92fa2cc24d63085db409a" class="avatar avatar-32 photo" height="32" width="32">			<cite class="fn"><a href="http://sickdesigner.com/" rel="external nofollow" class="url">Radu Chelariu</a></cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://sickdesigner.com/masonry-css-getting-awesome-with-css3/#comment-1339">
+			May 3 at 6:56 pm</a>		</div>
+
+		<p>Thanks Marco! If you use it anywhere, just drop me a line on Twitter or over here somewhere, I’d love to see what crazy interface you can come up with!</p>
+
+		<div class="reply">
+			<a class="comment-reply-link" href="http://sickdesigner.com/masonry-css-getting-awesome-with-css3/?replytocom=1339#respond" onclick="return addComment.moveForm(&quot;div-comment-1339&quot;, &quot;1339&quot;, &quot;respond&quot;, &quot;1661&quot;)">Reply</a>		</div>
+				</div>
+		</li><!-- #comment-## -->
+		<li class="comment even depth-2 parent" id="comment-1443">
+				<div id="div-comment-1443" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt="" src="./Sickdesigner.com › Masonry in CSS_files/91c57dc9822a8710f230d1f1b80097d6" class="avatar avatar-32 photo" height="32" width="32">			<cite class="fn"><a href="http://designindevelopment.com/" rel="external nofollow" class="url">Seth</a></cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://sickdesigner.com/masonry-css-getting-awesome-with-css3/#comment-1443">
+			May 9 at 2:43 pm</a>		</div>
+
+		<p>inline-block works in IE for inline elements only.</p>
+
+		<div class="reply">
+			<a class="comment-reply-link" href="http://sickdesigner.com/masonry-css-getting-awesome-with-css3/?replytocom=1443#respond" onclick="return addComment.moveForm(&quot;div-comment-1443&quot;, &quot;1443&quot;, &quot;respond&quot;, &quot;1661&quot;)">Reply</a>		</div>
+				</div>
+		<ul class="children">
+		<li class="comment byuser comment-author-radu bypostauthor odd alt depth-3 parent" id="comment-1454">
+				<div id="div-comment-1454" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt="" src="./Sickdesigner.com › Masonry in CSS_files/96fd62089ba92fa2cc24d63085db409a" class="avatar avatar-32 photo" height="32" width="32">			<cite class="fn"><a href="http://sickdesigner.com/" rel="external nofollow" class="url">Radu Chelariu</a></cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://sickdesigner.com/masonry-css-getting-awesome-with-css3/#comment-1454">
+			May 9 at 6:20 pm</a>		</div>
+
+		<p>I like turtles.</p>
+
+		<div class="reply">
+			<a class="comment-reply-link" href="http://sickdesigner.com/masonry-css-getting-awesome-with-css3/?replytocom=1454#respond" onclick="return addComment.moveForm(&quot;div-comment-1454&quot;, &quot;1454&quot;, &quot;respond&quot;, &quot;1661&quot;)">Reply</a>		</div>
+				</div>
+		<ul class="children">
+		<li class="comment even depth-4" id="comment-1481">
+				<div id="div-comment-1481" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt="" src="./Sickdesigner.com › Masonry in CSS_files/00c96c549dcd95280960254905064005" class="avatar avatar-32 photo" height="32" width="32">			<cite class="fn">onioneye</cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://sickdesigner.com/masonry-css-getting-awesome-with-css3/#comment-1481">
+			May 14 at 10:56 am</a>		</div>
+
+		<p>lawl xD</p>
+
+		<div class="reply">
+					</div>
+				</div>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+		<li class="comment odd alt thread-odd thread-alt depth-1 parent" id="comment-1340">
+				<div id="div-comment-1340" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt="" src="./Sickdesigner.com › Masonry in CSS_files/c848a61ab046b7c7073320dcf488f271" class="avatar avatar-32 photo" height="32" width="32">			<cite class="fn"><a href="http://shaunkerrdesign.com/" rel="external nofollow" class="url">Shaun</a></cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://sickdesigner.com/masonry-css-getting-awesome-with-css3/#comment-1340">
+			May 3 at 7:27 pm</a>		</div>
+
+		<p>clutch.</p>
+
+		<div class="reply">
+			<a class="comment-reply-link" href="http://sickdesigner.com/masonry-css-getting-awesome-with-css3/?replytocom=1340#respond" onclick="return addComment.moveForm(&quot;div-comment-1340&quot;, &quot;1340&quot;, &quot;respond&quot;, &quot;1661&quot;)">Reply</a>		</div>
+				</div>
+		<ul class="children">
+		<li class="comment byuser comment-author-radu bypostauthor even depth-2" id="comment-1342">
+				<div id="div-comment-1342" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt="" src="./Sickdesigner.com › Masonry in CSS_files/96fd62089ba92fa2cc24d63085db409a" class="avatar avatar-32 photo" height="32" width="32">			<cite class="fn"><a href="http://sickdesigner.com/" rel="external nofollow" class="url">Radu Chelariu</a></cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://sickdesigner.com/masonry-css-getting-awesome-with-css3/#comment-1342">
+			May 3 at 7:45 pm</a>		</div>
+
+		<p>Is that good or bad? I can’t quite tell. Hmm … I’ll take it as a good thing. Thanks!</p>
+
+		<div class="reply">
+			<a class="comment-reply-link" href="http://sickdesigner.com/masonry-css-getting-awesome-with-css3/?replytocom=1342#respond" onclick="return addComment.moveForm(&quot;div-comment-1342&quot;, &quot;1342&quot;, &quot;respond&quot;, &quot;1661&quot;)">Reply</a>		</div>
+				</div>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+		<li class="comment odd alt thread-even depth-1 parent" id="comment-1341">
+				<div id="div-comment-1341" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt="" src="./Sickdesigner.com › Masonry in CSS_files/8bd7ca3b02e0abe617fcb29d5a6c8320" class="avatar avatar-32 photo" height="32" width="32">			<cite class="fn">Utwo</cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://sickdesigner.com/masonry-css-getting-awesome-with-css3/#comment-1341">
+			May 3 at 7:29 pm</a>		</div>
+
+		<p>On smashingmagazine.com I read an interesting article on how we should provide a single design for all screen sizes, from mobile to TV.  I think this is the best method so far. Easy to implement, valid, quick, almost full browser support and … pure CSS.<br>
+I think we should eat more often omelet.<br>
+Bon appétit Radu!</p>
+
+		<div class="reply">
+			<a class="comment-reply-link" href="http://sickdesigner.com/masonry-css-getting-awesome-with-css3/?replytocom=1341#respond" onclick="return addComment.moveForm(&quot;div-comment-1341&quot;, &quot;1341&quot;, &quot;respond&quot;, &quot;1661&quot;)">Reply</a>		</div>
+				</div>
+		<ul class="children">
+		<li class="comment byuser comment-author-radu bypostauthor even depth-2" id="comment-1343">
+				<div id="div-comment-1343" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt="" src="./Sickdesigner.com › Masonry in CSS_files/96fd62089ba92fa2cc24d63085db409a" class="avatar avatar-32 photo" height="32" width="32">			<cite class="fn"><a href="http://sickdesigner.com/" rel="external nofollow" class="url">Radu Chelariu</a></cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://sickdesigner.com/masonry-css-getting-awesome-with-css3/#comment-1343">
+			May 3 at 7:45 pm</a>		</div>
+
+		<p>Thanks! Omelets for everyone!</p>
+
+		<div class="reply">
+			<a class="comment-reply-link" href="http://sickdesigner.com/masonry-css-getting-awesome-with-css3/?replytocom=1343#respond" onclick="return addComment.moveForm(&quot;div-comment-1343&quot;, &quot;1343&quot;, &quot;respond&quot;, &quot;1661&quot;)">Reply</a>		</div>
+				</div>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+		<li class="comment odd alt thread-odd thread-alt depth-1 parent" id="comment-1345">
+				<div id="div-comment-1345" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt="" src="./Sickdesigner.com › Masonry in CSS_files/643b55f0db6bd3be08c4a1f3c4c26eeb" class="avatar avatar-32 photo" height="32" width="32">			<cite class="fn"><a href="http://www.pandoramediabox.com/" rel="external nofollow" class="url">Florian Torres</a></cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://sickdesigner.com/masonry-css-getting-awesome-with-css3/#comment-1345">
+			May 3 at 9:20 pm</a>		</div>
+
+		<p>First you’ll be glad to know that I write you this comment from my bathroom. Thx to technologie.</p>
+<p>I was thinking of doing some expérimentation with css column on my next</p>
+
+		<div class="reply">
+			<a class="comment-reply-link" href="http://sickdesigner.com/masonry-css-getting-awesome-with-css3/?replytocom=1345#respond" onclick="return addComment.moveForm(&quot;div-comment-1345&quot;, &quot;1345&quot;, &quot;respond&quot;, &quot;1661&quot;)">Reply</a>		</div>
+				</div>
+		<ul class="children">
+		<li class="comment byuser comment-author-radu bypostauthor even depth-2" id="comment-1347">
+				<div id="div-comment-1347" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt="" src="./Sickdesigner.com › Masonry in CSS_files/96fd62089ba92fa2cc24d63085db409a" class="avatar avatar-32 photo" height="32" width="32">			<cite class="fn"><a href="http://sickdesigner.com/" rel="external nofollow" class="url">Radu Chelariu</a></cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://sickdesigner.com/masonry-css-getting-awesome-with-css3/#comment-1347">
+			May 3 at 9:24 pm</a>		</div>
+
+		<p>Don’t we all, buddy! Smartphones have probably increased bathroom time worldwide by at least 200%. But, hey, at least you’re honest about it! <img src="./Sickdesigner.com › Masonry in CSS_files/icon_smile.gif" alt=":)" class="wp-smiley"> </p>
+
+		<div class="reply">
+			<a class="comment-reply-link" href="http://sickdesigner.com/masonry-css-getting-awesome-with-css3/?replytocom=1347#respond" onclick="return addComment.moveForm(&quot;div-comment-1347&quot;, &quot;1347&quot;, &quot;respond&quot;, &quot;1661&quot;)">Reply</a>		</div>
+				</div>
+		</li><!-- #comment-## -->
+		<li class="comment odd alt depth-2" id="comment-1348">
+				<div id="div-comment-1348" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt="" src="./Sickdesigner.com › Masonry in CSS_files/643b55f0db6bd3be08c4a1f3c4c26eeb" class="avatar avatar-32 photo" height="32" width="32">			<cite class="fn"><a href="http://www.pandoramediabox.com/" rel="external nofollow" class="url">Florian Torres</a></cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://sickdesigner.com/masonry-css-getting-awesome-with-css3/#comment-1348">
+			May 3 at 9:26 pm</a>		</div>
+
+		<p>… next work. So i’ll give an eye at your post, and let you know if I end with something cool. </p>
+<p>Thank you for sharing this nice tip.<br>
+F**k you IPhone for the message in two parts. I swear, no more comment in bathroom …</p>
+
+		<div class="reply">
+			<a class="comment-reply-link" href="http://sickdesigner.com/masonry-css-getting-awesome-with-css3/?replytocom=1348#respond" onclick="return addComment.moveForm(&quot;div-comment-1348&quot;, &quot;1348&quot;, &quot;respond&quot;, &quot;1661&quot;)">Reply</a>		</div>
+				</div>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+		<li class="comment even thread-even depth-1" id="comment-1350">
+				<div id="div-comment-1350" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt="" src="./Sickdesigner.com › Masonry in CSS_files/7efaea71ea53dda21167b342d6ba27e6" class="avatar avatar-32 photo" height="32" width="32">			<cite class="fn"><a href="http://gabri.me/" rel="external nofollow" class="url">Ahmed El Gabri</a></cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://sickdesigner.com/masonry-css-getting-awesome-with-css3/#comment-1350">
+			May 3 at 10:24 pm</a>		</div>
+
+		<p>That was just in time !</p>
+<p>Yesterday i was playing with my Tumblr i wanted to make this effect without Masonery . I used inline-block &amp; it solved 60% of the problem but i haven`t thought of the columns part.</p>
+<p>Well done !</p>
+
+		<div class="reply">
+			<a class="comment-reply-link" href="http://sickdesigner.com/masonry-css-getting-awesome-with-css3/?replytocom=1350#respond" onclick="return addComment.moveForm(&quot;div-comment-1350&quot;, &quot;1350&quot;, &quot;respond&quot;, &quot;1661&quot;)">Reply</a>		</div>
+				</div>
+		</li><!-- #comment-## -->
+		<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-1354">
+				<div id="div-comment-1354" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt="" src="./Sickdesigner.com › Masonry in CSS_files/08268fa46d9a79d622b7c6d6503367d7" class="avatar avatar-32 photo" height="32" width="32">			<cite class="fn"><a href="http://gregbabula.info/" rel="external nofollow" class="url">Greg Babula</a></cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://sickdesigner.com/masonry-css-getting-awesome-with-css3/#comment-1354">
+			May 4 at 6:12 am</a>		</div>
+
+		<p>I wish the I could use this on every project, it would solve so many issues</p>
+
+		<div class="reply">
+			<a class="comment-reply-link" href="http://sickdesigner.com/masonry-css-getting-awesome-with-css3/?replytocom=1354#respond" onclick="return addComment.moveForm(&quot;div-comment-1354&quot;, &quot;1354&quot;, &quot;respond&quot;, &quot;1661&quot;)">Reply</a>		</div>
+				</div>
+		</li><!-- #comment-## -->
+		<li class="comment even thread-even depth-1" id="comment-1360">
+				<div id="div-comment-1360" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt="" src="./Sickdesigner.com › Masonry in CSS_files/2f0340530d93b5999f7465e4e4defb55" class="avatar avatar-32 photo" height="32" width="32">			<cite class="fn"><a href="http://dreamingirisdesign.com/" rel="external nofollow" class="url">Keri</a></cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://sickdesigner.com/masonry-css-getting-awesome-with-css3/#comment-1360">
+			May 4 at 3:06 pm</a>		</div>
+
+		<p>Ah, the amazing magical powers of omelettes. Thanks so much! Bookmarked =D</p>
+
+		<div class="reply">
+			<a class="comment-reply-link" href="http://sickdesigner.com/masonry-css-getting-awesome-with-css3/?replytocom=1360#respond" onclick="return addComment.moveForm(&quot;div-comment-1360&quot;, &quot;1360&quot;, &quot;respond&quot;, &quot;1661&quot;)">Reply</a>		</div>
+				</div>
+		</li><!-- #comment-## -->
+		<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-1362">
+				<div id="div-comment-1362" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt="" src="./Sickdesigner.com › Masonry in CSS_files/ef54118d57973d4ada988fa191d60dad" class="avatar avatar-32 photo" height="32" width="32">			<cite class="fn"><a href="http://www.twitter.com/lewismcarey" rel="external nofollow" class="url">lewismc</a></cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://sickdesigner.com/masonry-css-getting-awesome-with-css3/#comment-1362">
+			May 4 at 4:44 pm</a>		</div>
+
+		<p>I totally ditched column layout on a recent project … something to do with attempting to break the column on h1′s … but now I’ll have to revisit. SICK!!!</p>
+
+		<div class="reply">
+			<a class="comment-reply-link" href="http://sickdesigner.com/masonry-css-getting-awesome-with-css3/?replytocom=1362#respond" onclick="return addComment.moveForm(&quot;div-comment-1362&quot;, &quot;1362&quot;, &quot;respond&quot;, &quot;1661&quot;)">Reply</a>		</div>
+				</div>
+		</li><!-- #comment-## -->
+		<li class="comment even thread-even depth-1 parent" id="comment-1376">
+				<div id="div-comment-1376" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt="" src="./Sickdesigner.com › Masonry in CSS_files/9cee8911313f0cc9f61d85ba45a1eb26" class="avatar avatar-32 photo" height="32" width="32">			<cite class="fn">Percept</cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://sickdesigner.com/masonry-css-getting-awesome-with-css3/#comment-1376">
+			May 5 at 7:56 am</a>		</div>
+
+		<p>Radu,</p>
+<p>I’m not sure if I’m understanding this incorrect but the CSS3 column method does not provide the same result as Masonry?</p>
+<p>For example if you set 3 columns, how would “block 8″ in the example at <a href="http://desandro.com/resources/jquery-masonry/" rel="nofollow">http://desandro.com/resources/jquery-masonry/</a> span 2 columns?</p>
+
+		<div class="reply">
+			<a class="comment-reply-link" href="http://sickdesigner.com/masonry-css-getting-awesome-with-css3/?replytocom=1376#respond" onclick="return addComment.moveForm(&quot;div-comment-1376&quot;, &quot;1376&quot;, &quot;respond&quot;, &quot;1661&quot;)">Reply</a>		</div>
+				</div>
+		<ul class="children">
+		<li class="comment byuser comment-author-radu bypostauthor odd alt depth-2 parent" id="comment-1377">
+				<div id="div-comment-1377" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt="" src="./Sickdesigner.com › Masonry in CSS_files/96fd62089ba92fa2cc24d63085db409a" class="avatar avatar-32 photo" height="32" width="32">			<cite class="fn"><a href="http://sickdesigner.com/" rel="external nofollow" class="url">Radu Chelariu</a></cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://sickdesigner.com/masonry-css-getting-awesome-with-css3/#comment-1377">
+			May 5 at 8:06 am</a>		</div>
+
+		<p>The real trick that makes David’s Masonry plugin so useful is the elimination of variable vertical gaps between blocks, which is what I was looking for with this technique. Indeed, using columns does not provide the same flexibility as David’s plugin, but that is somewhat a given, seeing as this is just a CSS trick and not a full fledged plugin.</p>
+
+		<div class="reply">
+			<a class="comment-reply-link" href="http://sickdesigner.com/masonry-css-getting-awesome-with-css3/?replytocom=1377#respond" onclick="return addComment.moveForm(&quot;div-comment-1377&quot;, &quot;1377&quot;, &quot;respond&quot;, &quot;1661&quot;)">Reply</a>		</div>
+				</div>
+		<ul class="children">
+		<li class="comment even depth-3" id="comment-1378">
+				<div id="div-comment-1378" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt="" src="./Sickdesigner.com › Masonry in CSS_files/9cee8911313f0cc9f61d85ba45a1eb26" class="avatar avatar-32 photo" height="32" width="32">			<cite class="fn">Percept</cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://sickdesigner.com/masonry-css-getting-awesome-with-css3/#comment-1378">
+			May 5 at 8:18 am</a>		</div>
+
+		<p>Alright, I mis-read your post as a full CSS Masonry alternative. My bad <img src="./Sickdesigner.com › Masonry in CSS_files/icon_smile.gif" alt=":)" class="wp-smiley"> </p>
+
+		<div class="reply">
+			<a class="comment-reply-link" href="http://sickdesigner.com/masonry-css-getting-awesome-with-css3/?replytocom=1378#respond" onclick="return addComment.moveForm(&quot;div-comment-1378&quot;, &quot;1378&quot;, &quot;respond&quot;, &quot;1661&quot;)">Reply</a>		</div>
+				</div>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+		<li class="comment odd alt thread-odd thread-alt depth-1 parent" id="comment-1391">
+				<div id="div-comment-1391" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt="" src="./Sickdesigner.com › Masonry in CSS_files/7aeed9bd1bf0e0943e5c57ab0e087d27" class="avatar avatar-32 photo" height="32" width="32">			<cite class="fn"><a href="http://gauravmishra.com/" rel="external nofollow" class="url">Gaurav Mishra</a></cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://sickdesigner.com/masonry-css-getting-awesome-with-css3/#comment-1391">
+			May 6 at 8:33 am</a>		</div>
+
+		<p>I check the post.. but the js work around for IE. Don’t work that satisfactorily .</p>
+<p>If the masonry.js works ok..in case you have tried it.</p>
+
+		<div class="reply">
+			<a class="comment-reply-link" href="http://sickdesigner.com/masonry-css-getting-awesome-with-css3/?replytocom=1391#respond" onclick="return addComment.moveForm(&quot;div-comment-1391&quot;, &quot;1391&quot;, &quot;respond&quot;, &quot;1661&quot;)">Reply</a>		</div>
+				</div>
+		<ul class="children">
+		<li class="comment byuser comment-author-radu bypostauthor even depth-2 parent" id="comment-1392">
+				<div id="div-comment-1392" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt="" src="./Sickdesigner.com › Masonry in CSS_files/96fd62089ba92fa2cc24d63085db409a" class="avatar avatar-32 photo" height="32" width="32">			<cite class="fn"><a href="http://sickdesigner.com/" rel="external nofollow" class="url">Radu Chelariu</a></cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://sickdesigner.com/masonry-css-getting-awesome-with-css3/#comment-1392">
+			May 6 at 8:36 am</a>		</div>
+
+		<p>You need to put the IE conditional comment inside the  tags. Just like you would call a regular script, except for IE only. And, in the case of my example, the script goes in a folder called “js”.</p>
+
+		<div class="reply">
+			<a class="comment-reply-link" href="http://sickdesigner.com/masonry-css-getting-awesome-with-css3/?replytocom=1392#respond" onclick="return addComment.moveForm(&quot;div-comment-1392&quot;, &quot;1392&quot;, &quot;respond&quot;, &quot;1661&quot;)">Reply</a>		</div>
+				</div>
+		<ul class="children">
+		<li class="comment odd alt depth-3" id="comment-1393">
+				<div id="div-comment-1393" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt="" src="./Sickdesigner.com › Masonry in CSS_files/7aeed9bd1bf0e0943e5c57ab0e087d27" class="avatar avatar-32 photo" height="32" width="32">			<cite class="fn"><a href="http://gauravmishra.com/" rel="external nofollow" class="url">Gaurav Mishra</a></cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://sickdesigner.com/masonry-css-getting-awesome-with-css3/#comment-1393">
+			May 6 at 8:41 am</a>		</div>
+
+		<p>Hello Radu Chelariu,<br>
+Alright..<br>
+What I meant that..  the workaround method by mason.js for IE… gives near around the same visible results ??<br>
+as given by the CSS magic code.</p>
+<p>Namaste from India<br>
+Gaurav M</p>
+
+		<div class="reply">
+			<a class="comment-reply-link" href="http://sickdesigner.com/masonry-css-getting-awesome-with-css3/?replytocom=1393#respond" onclick="return addComment.moveForm(&quot;div-comment-1393&quot;, &quot;1393&quot;, &quot;respond&quot;, &quot;1661&quot;)">Reply</a>		</div>
+				</div>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+		<li class="comment even thread-even depth-1 parent" id="comment-1394">
+				<div id="div-comment-1394" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt="" src="./Sickdesigner.com › Masonry in CSS_files/fcfc2fd71b55097413ed641ac847ff6d" class="avatar avatar-32 photo" height="32" width="32">			<cite class="fn"><a href="http://www.madebymice.com/" rel="external nofollow" class="url">Raf Van Suetendael</a></cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://sickdesigner.com/masonry-css-getting-awesome-with-css3/#comment-1394">
+			May 6 at 8:51 am</a>		</div>
+
+		<p>Euhm …<br>
+You used it live on the front of you blog but something goes wrong for me in safari 5.0.5 on mac</p>
+<p>The masonry effect works, but not completely.</p>
+<p>To the left is one line of posts, all underneath each other. Next to it are empty white blocks.</p>
+<p>I presume the content is supposed to be inside those white blocks? <img src="./Sickdesigner.com › Masonry in CSS_files/icon_smile.gif" alt=":)" class="wp-smiley"> </p>
+<p>Just thought I’d let you know.</p>
+<p>Great concept btw.</p>
+
+		<div class="reply">
+			<a class="comment-reply-link" href="http://sickdesigner.com/masonry-css-getting-awesome-with-css3/?replytocom=1394#respond" onclick="return addComment.moveForm(&quot;div-comment-1394&quot;, &quot;1394&quot;, &quot;respond&quot;, &quot;1661&quot;)">Reply</a>		</div>
+				</div>
+		<ul class="children">
+		<li class="comment byuser comment-author-radu bypostauthor odd alt depth-2" id="comment-1395">
+				<div id="div-comment-1395" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt="" src="./Sickdesigner.com › Masonry in CSS_files/96fd62089ba92fa2cc24d63085db409a" class="avatar avatar-32 photo" height="32" width="32">			<cite class="fn"><a href="http://sickdesigner.com/" rel="external nofollow" class="url">Radu Chelariu</a></cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://sickdesigner.com/masonry-css-getting-awesome-with-css3/#comment-1395">
+			May 6 at 8:57 am</a>		</div>
+
+		<p>Hmm, apparently Safari 5 is being smart. I’m looking into it, see if I can’t find some sort of solution here. It’s a cryin’ shame, really. Thanks!</p>
+
+		<div class="reply">
+			<a class="comment-reply-link" href="http://sickdesigner.com/masonry-css-getting-awesome-with-css3/?replytocom=1395#respond" onclick="return addComment.moveForm(&quot;div-comment-1395&quot;, &quot;1395&quot;, &quot;respond&quot;, &quot;1661&quot;)">Reply</a>		</div>
+				</div>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+		<li class="comment even thread-odd thread-alt depth-1 parent" id="comment-1397">
+				<div id="div-comment-1397" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt="" src="./Sickdesigner.com › Masonry in CSS_files/7f371eff74fc5fc72653302a07be272b" class="avatar avatar-32 photo" height="32" width="32">			<cite class="fn"><a href="http://www.manuel-strehl.de/" rel="external nofollow" class="url">Manuel Strehl</a></cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://sickdesigner.com/masonry-css-getting-awesome-with-css3/#comment-1397">
+			May 6 at 9:14 am</a>		</div>
+
+		<p>The idea of combining columns and inlne-block is great.</p>
+<p>However, I’m not fully convinced for a similar reason as Gaurav’s. Masonry sorts the blocks left-to-right first, while the column solution does top-bottom first. This makes  it useless in many scenaries, where you have lots of blocks, that extend beneath the fold, and you want the most current to line up at the top.</p>
+<p>I don’t think that we can get the desired effect w/o JS in the next 10 years, even if browsers would support something as cutting-edge as CSS template layouts, <a href="http://www.w3.org/TR/css3-layout/" rel="nofollow">http://www.w3.org/TR/css3-layout/</a>.</p>
+<p>Now that that’s out of the way, let me say, that this is the first example of CSS columns I ever read, that uses it for something else than mere text layout. So thanks for putting this property in our (mental) toolbox.</p>
+
+		<div class="reply">
+			<a class="comment-reply-link" href="http://sickdesigner.com/masonry-css-getting-awesome-with-css3/?replytocom=1397#respond" onclick="return addComment.moveForm(&quot;div-comment-1397&quot;, &quot;1397&quot;, &quot;respond&quot;, &quot;1661&quot;)">Reply</a>		</div>
+				</div>
+		<ul class="children">
+		<li class="comment byuser comment-author-radu bypostauthor odd alt depth-2 parent" id="comment-1398">
+				<div id="div-comment-1398" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt="" src="./Sickdesigner.com › Masonry in CSS_files/96fd62089ba92fa2cc24d63085db409a" class="avatar avatar-32 photo" height="32" width="32">			<cite class="fn"><a href="http://sickdesigner.com/" rel="external nofollow" class="url">Radu Chelariu</a></cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://sickdesigner.com/masonry-css-getting-awesome-with-css3/#comment-1398">
+			May 6 at 9:22 am</a>		</div>
+
+		<p>I’m a bit more optimistic and hope to see cross-browser CSS columned layouts in about 3 years. Still, I’m glad to see that everyone gets what this is for and, like all new stuff in this business, should be used rarely and for good reasons.</p>
+
+		<div class="reply">
+			<a class="comment-reply-link" href="http://sickdesigner.com/masonry-css-getting-awesome-with-css3/?replytocom=1398#respond" onclick="return addComment.moveForm(&quot;div-comment-1398&quot;, &quot;1398&quot;, &quot;respond&quot;, &quot;1661&quot;)">Reply</a>		</div>
+				</div>
+		<ul class="children">
+		<li class="comment even depth-3 parent" id="comment-1442">
+				<div id="div-comment-1442" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt="" src="./Sickdesigner.com › Masonry in CSS_files/7f371eff74fc5fc72653302a07be272b" class="avatar avatar-32 photo" height="32" width="32">			<cite class="fn"><a href="http://www.manuel-strehl.de/" rel="external nofollow" class="url">Manuel Strehl</a></cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://sickdesigner.com/masonry-css-getting-awesome-with-css3/#comment-1442">
+			May 9 at 2:25 pm</a>		</div>
+
+		<p>Just to make my point clear: I don’t think, that we can get the *exact Masonry effect* within the next 10 years with CSS alone.</p>
+<p>My pessimism there is fed by the fact, that it’s now 6 years that I asked on the public-css list about an CSS property to vertically align block content. The WG members said, that it’s something being worked on.</p>
+<p>And until today there was literally no motion forward on this (rather oftenly asked) topic…</p>
+
+		<div class="reply">
+			<a class="comment-reply-link" href="http://sickdesigner.com/masonry-css-getting-awesome-with-css3/?replytocom=1442#respond" onclick="return addComment.moveForm(&quot;div-comment-1442&quot;, &quot;1442&quot;, &quot;respond&quot;, &quot;1661&quot;)">Reply</a>		</div>
+				</div>
+		<ul class="children">
+		<li class="comment byuser comment-author-radu bypostauthor odd alt depth-4" id="comment-1453">
+				<div id="div-comment-1453" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt="" src="./Sickdesigner.com › Masonry in CSS_files/96fd62089ba92fa2cc24d63085db409a" class="avatar avatar-32 photo" height="32" width="32">			<cite class="fn"><a href="http://sickdesigner.com/" rel="external nofollow" class="url">Radu Chelariu</a></cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://sickdesigner.com/masonry-css-getting-awesome-with-css3/#comment-1453">
+			May 9 at 6:20 pm</a>		</div>
+
+		<p>I try to keep an optimistic view, though I know what you’re talking about, Manuel. It gets pretty frustrating when you realize that in an industry that thrives off progress, we’re left waiting years on end for the tiniest of extra feature. Damn you, W3C! You hear that? Damn you!</p>
+
+		<div class="reply">
+					</div>
+				</div>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+		<li class="comment even thread-even depth-1" id="comment-1406">
+				<div id="div-comment-1406" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt="" src="./Sickdesigner.com › Masonry in CSS_files/4854bf728a9189f2361405335aa7bf1b" class="avatar avatar-32 photo" height="32" width="32">			<cite class="fn"><a href="http://www.plan-zero.org/" rel="external nofollow" class="url">Cristopher Ocana</a></cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://sickdesigner.com/masonry-css-getting-awesome-with-css3/#comment-1406">
+			May 6 at 8:22 pm</a>		</div>
+
+		<p>Awesome work, can’t wait to put it on a project, maybe next one <img src="./Sickdesigner.com › Masonry in CSS_files/icon_smile.gif" alt=":)" class="wp-smiley"> </p>
+
+		<div class="reply">
+			<a class="comment-reply-link" href="http://sickdesigner.com/masonry-css-getting-awesome-with-css3/?replytocom=1406#respond" onclick="return addComment.moveForm(&quot;div-comment-1406&quot;, &quot;1406&quot;, &quot;respond&quot;, &quot;1661&quot;)">Reply</a>		</div>
+				</div>
+		</li><!-- #comment-## -->
+		<li class="comment odd alt thread-odd thread-alt depth-1 parent" id="comment-1407">
+				<div id="div-comment-1407" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt="" src="./Sickdesigner.com › Masonry in CSS_files/9de406229f56578ac61578a036649743" class="avatar avatar-32 photo" height="32" width="32">			<cite class="fn"><a href="http://www.designmadeingermany.de/" rel="external nofollow" class="url">Martin</a></cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://sickdesigner.com/masonry-css-getting-awesome-with-css3/#comment-1407">
+			May 6 at 8:46 pm</a>		</div>
+
+		<p>Damn, first thought your a genious, but Manuel Strehl is right of course. To bad.</p>
+
+		<div class="reply">
+			<a class="comment-reply-link" href="http://sickdesigner.com/masonry-css-getting-awesome-with-css3/?replytocom=1407#respond" onclick="return addComment.moveForm(&quot;div-comment-1407&quot;, &quot;1407&quot;, &quot;respond&quot;, &quot;1661&quot;)">Reply</a>		</div>
+				</div>
+		<ul class="children">
+		<li class="comment byuser comment-author-radu bypostauthor even depth-2" id="comment-1431">
+				<div id="div-comment-1431" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt="" src="./Sickdesigner.com › Masonry in CSS_files/96fd62089ba92fa2cc24d63085db409a" class="avatar avatar-32 photo" height="32" width="32">			<cite class="fn"><a href="http://sickdesigner.com/" rel="external nofollow" class="url">Radu Chelariu</a></cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://sickdesigner.com/masonry-css-getting-awesome-with-css3/#comment-1431">
+			May 8 at 8:32 pm</a>		</div>
+
+		<p>*Too. Oh, didn’t you know? I’m not a genius, I’m a grammar nazi disguised as a web designer. <img src="./Sickdesigner.com › Masonry in CSS_files/icon_razz.gif" alt=":P" class="wp-smiley"> </p>
+
+		<div class="reply">
+			<a class="comment-reply-link" href="http://sickdesigner.com/masonry-css-getting-awesome-with-css3/?replytocom=1431#respond" onclick="return addComment.moveForm(&quot;div-comment-1431&quot;, &quot;1431&quot;, &quot;respond&quot;, &quot;1661&quot;)">Reply</a>		</div>
+				</div>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+		<li class="comment odd alt thread-even depth-1" id="comment-1429">
+				<div id="div-comment-1429" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt="" src="./Sickdesigner.com › Masonry in CSS_files/56262e651f040df999260ea0c6173def" class="avatar avatar-32 photo" height="32" width="32">			<cite class="fn">Luis</cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://sickdesigner.com/masonry-css-getting-awesome-with-css3/#comment-1429">
+			May 8 at 6:54 pm</a>		</div>
+
+		<p>Great article and solution. Loved your site. Will come here more often. Cheers!</p>
+
+		<div class="reply">
+			<a class="comment-reply-link" href="http://sickdesigner.com/masonry-css-getting-awesome-with-css3/?replytocom=1429#respond" onclick="return addComment.moveForm(&quot;div-comment-1429&quot;, &quot;1429&quot;, &quot;respond&quot;, &quot;1661&quot;)">Reply</a>		</div>
+				</div>
+		</li><!-- #comment-## -->
+		<li class="comment even thread-odd thread-alt depth-1" id="comment-1438">
+				<div id="div-comment-1438" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt="" src="./Sickdesigner.com › Masonry in CSS_files/3cf7a8ab0bccee5b65d39b50a170a555" class="avatar avatar-32 photo" height="32" width="32">			<cite class="fn"><a href="http://marco-pivetta.com/" rel="external nofollow" class="url">Marco Pivetta</a></cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://sickdesigner.com/masonry-css-getting-awesome-with-css3/#comment-1438">
+			May 9 at 1:27 pm</a>		</div>
+
+		<p>Well that looks neat!<br>
+This is a css3 trick that does the work quite well, and I didn’t think of it too!<br>
+Thank you for sharing, this makes stuff much easier! <img src="./Sickdesigner.com › Masonry in CSS_files/icon_smile.gif" alt=":)" class="wp-smiley"> </p>
+
+		<div class="reply">
+			<a class="comment-reply-link" href="http://sickdesigner.com/masonry-css-getting-awesome-with-css3/?replytocom=1438#respond" onclick="return addComment.moveForm(&quot;div-comment-1438&quot;, &quot;1438&quot;, &quot;respond&quot;, &quot;1661&quot;)">Reply</a>		</div>
+				</div>
+		</li><!-- #comment-## -->
+		<li class="comment odd alt thread-even depth-1 parent" id="comment-1440">
+				<div id="div-comment-1440" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt="" src="./Sickdesigner.com › Masonry in CSS_files/0cb56bfd72ace74277ffa344ed165948" class="avatar avatar-32 photo" height="32" width="32">			<cite class="fn"><a href="http://www.css3files.com/" rel="external nofollow" class="url">Christian Krammer</a></cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://sickdesigner.com/masonry-css-getting-awesome-with-css3/#comment-1440">
+			May 9 at 1:45 pm</a>		</div>
+
+		<p>Could you please make a demo page for this one? Because I tried it out myself and it only works partially in WebKit and not at all in Firefox.</p>
+
+		<div class="reply">
+			<a class="comment-reply-link" href="http://sickdesigner.com/masonry-css-getting-awesome-with-css3/?replytocom=1440#respond" onclick="return addComment.moveForm(&quot;div-comment-1440&quot;, &quot;1440&quot;, &quot;respond&quot;, &quot;1661&quot;)">Reply</a>		</div>
+				</div>
+		<ul class="children">
+		<li class="comment byuser comment-author-radu bypostauthor even depth-2" id="comment-1451">
+				<div id="div-comment-1451" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt="" src="./Sickdesigner.com › Masonry in CSS_files/96fd62089ba92fa2cc24d63085db409a" class="avatar avatar-32 photo" height="32" width="32">			<cite class="fn"><a href="http://sickdesigner.com/" rel="external nofollow" class="url">Radu Chelariu</a></cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://sickdesigner.com/masonry-css-getting-awesome-with-css3/#comment-1451">
+			May 9 at 6:17 pm</a>		</div>
+
+		<p>Hit the homepage with Firebug. The CSS is right there. It should be pretty self explanatory.</p>
+
+		<div class="reply">
+			<a class="comment-reply-link" href="http://sickdesigner.com/masonry-css-getting-awesome-with-css3/?replytocom=1451#respond" onclick="return addComment.moveForm(&quot;div-comment-1451&quot;, &quot;1451&quot;, &quot;respond&quot;, &quot;1661&quot;)">Reply</a>		</div>
+				</div>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+		<li class="comment odd alt thread-odd thread-alt depth-1 parent" id="comment-1441">
+				<div id="div-comment-1441" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt="" src="./Sickdesigner.com › Masonry in CSS_files/a7e607bb17b9ee6c3ecc8d2acb1adc59" class="avatar avatar-32 photo" height="32" width="32">			<cite class="fn"><a href="http://www.madebyjordan.com/" rel="external nofollow" class="url">Jordan Moore</a></cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://sickdesigner.com/masonry-css-getting-awesome-with-css3/#comment-1441">
+			May 9 at 1:48 pm</a>		</div>
+
+		<p>You clever, clever bastard. *bookmarked*</p>
+
+		<div class="reply">
+			<a class="comment-reply-link" href="http://sickdesigner.com/masonry-css-getting-awesome-with-css3/?replytocom=1441#respond" onclick="return addComment.moveForm(&quot;div-comment-1441&quot;, &quot;1441&quot;, &quot;respond&quot;, &quot;1661&quot;)">Reply</a>		</div>
+				</div>
+		<ul class="children">
+		<li class="comment byuser comment-author-radu bypostauthor even depth-2" id="comment-1452">
+				<div id="div-comment-1452" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt="" src="./Sickdesigner.com › Masonry in CSS_files/96fd62089ba92fa2cc24d63085db409a" class="avatar avatar-32 photo" height="32" width="32">			<cite class="fn"><a href="http://sickdesigner.com/" rel="external nofollow" class="url">Radu Chelariu</a></cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://sickdesigner.com/masonry-css-getting-awesome-with-css3/#comment-1452">
+			May 9 at 6:18 pm</a>		</div>
+
+		<p>Thanks, you twat! <img src="./Sickdesigner.com › Masonry in CSS_files/icon_razz.gif" alt=":P" class="wp-smiley"> </p>
+
+		<div class="reply">
+			<a class="comment-reply-link" href="http://sickdesigner.com/masonry-css-getting-awesome-with-css3/?replytocom=1452#respond" onclick="return addComment.moveForm(&quot;div-comment-1452&quot;, &quot;1452&quot;, &quot;respond&quot;, &quot;1661&quot;)">Reply</a>		</div>
+				</div>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+		<li class="comment odd alt thread-even depth-1 parent" id="comment-1446">
+				<div id="div-comment-1446" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt="" src="./Sickdesigner.com › Masonry in CSS_files/a67dfeac110f895dd8b5530729417e96" class="avatar avatar-32 photo" height="32" width="32">			<cite class="fn"><a href="http://butch-villarama.com/" rel="external nofollow" class="url">Butch V.</a></cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://sickdesigner.com/masonry-css-getting-awesome-with-css3/#comment-1446">
+			May 9 at 3:07 pm</a>		</div>
+
+		<p>Nice article! A new way of arranging my layouts that I want to try out now. Thanks! <img src="./Sickdesigner.com › Masonry in CSS_files/icon_smile.gif" alt=":)" class="wp-smiley"> </p>
+
+		<div class="reply">
+			<a class="comment-reply-link" href="http://sickdesigner.com/masonry-css-getting-awesome-with-css3/?replytocom=1446#respond" onclick="return addComment.moveForm(&quot;div-comment-1446&quot;, &quot;1446&quot;, &quot;respond&quot;, &quot;1661&quot;)">Reply</a>		</div>
+				</div>
+		<ul class="children">
+		<li class="comment byuser comment-author-radu bypostauthor even depth-2" id="comment-1455">
+				<div id="div-comment-1455" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt="" src="./Sickdesigner.com › Masonry in CSS_files/96fd62089ba92fa2cc24d63085db409a" class="avatar avatar-32 photo" height="32" width="32">			<cite class="fn"><a href="http://sickdesigner.com/" rel="external nofollow" class="url">Radu Chelariu</a></cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://sickdesigner.com/masonry-css-getting-awesome-with-css3/#comment-1455">
+			May 9 at 6:20 pm</a>		</div>
+
+		<p>You’re very welcome, Butch. Now go catch Tom, before Jerry gets it! Just kidding, buddy. <img src="./Sickdesigner.com › Masonry in CSS_files/icon_wink.gif" alt=";)" class="wp-smiley"> </p>
+
+		<div class="reply">
+			<a class="comment-reply-link" href="http://sickdesigner.com/masonry-css-getting-awesome-with-css3/?replytocom=1455#respond" onclick="return addComment.moveForm(&quot;div-comment-1455&quot;, &quot;1455&quot;, &quot;respond&quot;, &quot;1661&quot;)">Reply</a>		</div>
+				</div>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+		<li class="comment odd alt thread-odd thread-alt depth-1 parent" id="comment-1449">
+				<div id="div-comment-1449" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt="" src="./Sickdesigner.com › Masonry in CSS_files/3f0a873e66738100c5938054edebc593" class="avatar avatar-32 photo" height="32" width="32">			<cite class="fn"><a href="http://anodpixels.com/" rel="external nofollow" class="url">Alexandru Nastase</a></cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://sickdesigner.com/masonry-css-getting-awesome-with-css3/#comment-1449">
+			May 9 at 4:33 pm</a>		</div>
+
+		<p>Geniala treaba chiar ma intrebam cum naibii le-ai aranjat frate, ce sa zic you the man Radule, posteaza cat mai multe.<br>
+Mult noroc.</p>
+
+		<div class="reply">
+			<a class="comment-reply-link" href="http://sickdesigner.com/masonry-css-getting-awesome-with-css3/?replytocom=1449#respond" onclick="return addComment.moveForm(&quot;div-comment-1449&quot;, &quot;1449&quot;, &quot;respond&quot;, &quot;1661&quot;)">Reply</a>		</div>
+				</div>
+		<ul class="children">
+		<li class="comment byuser comment-author-radu bypostauthor even depth-2" id="comment-1456">
+				<div id="div-comment-1456" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt="" src="./Sickdesigner.com › Masonry in CSS_files/96fd62089ba92fa2cc24d63085db409a" class="avatar avatar-32 photo" height="32" width="32">			<cite class="fn"><a href="http://sickdesigner.com/" rel="external nofollow" class="url">Radu Chelariu</a></cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://sickdesigner.com/masonry-css-getting-awesome-with-css3/#comment-1456">
+			May 9 at 6:21 pm</a>		</div>
+
+		<p>Multamiri si aprecieri. Asa e cand te roade ceva, pana la urma tot reusesti sa te scarpini, nu? <img src="./Sickdesigner.com › Masonry in CSS_files/icon_smile.gif" alt=":)" class="wp-smiley"> </p>
+
+		<div class="reply">
+			<a class="comment-reply-link" href="http://sickdesigner.com/masonry-css-getting-awesome-with-css3/?replytocom=1456#respond" onclick="return addComment.moveForm(&quot;div-comment-1456&quot;, &quot;1456&quot;, &quot;respond&quot;, &quot;1661&quot;)">Reply</a>		</div>
+				</div>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+		<li class="comment odd alt thread-even depth-1" id="comment-1458">
+				<div id="div-comment-1458" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt="" src="./Sickdesigner.com › Masonry in CSS_files/8b7f59ae2cd9263fc7873047705fb687" class="avatar avatar-32 photo" height="32" width="32">			<cite class="fn"><a href="http://www.robertochiaveri.it/" rel="external nofollow" class="url">rrobe</a></cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://sickdesigner.com/masonry-css-getting-awesome-with-css3/#comment-1458">
+			May 9 at 7:09 pm</a>		</div>
+
+		<p>Doesn’t look right on android 2.2 phone, I’m afraid…</p>
+
+		<div class="reply">
+			<a class="comment-reply-link" href="http://sickdesigner.com/masonry-css-getting-awesome-with-css3/?replytocom=1458#respond" onclick="return addComment.moveForm(&quot;div-comment-1458&quot;, &quot;1458&quot;, &quot;respond&quot;, &quot;1661&quot;)">Reply</a>		</div>
+				</div>
+		</li><!-- #comment-## -->
+		<li class="comment even thread-odd thread-alt depth-1 parent" id="comment-1465">
+				<div id="div-comment-1465" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt="" src="./Sickdesigner.com › Masonry in CSS_files/3f286c34e75c86b65caab3c5efe54da2" class="avatar avatar-32 photo" height="32" width="32">			<cite class="fn"><a href="http://redboxdigital.com.au/" rel="external nofollow" class="url">Clark Pan</a></cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://sickdesigner.com/masonry-css-getting-awesome-with-css3/#comment-1465">
+			May 10 at 6:02 am</a>		</div>
+
+		<p>Great concept but i have a question regarding the semantics of this technique.</p>
+<p>It doesn’t really apply to your front page since you don’t seem to have dates anywhere on the site, but lets say you want to list your articles chronologically, wouldn’t it break reading conventions the articles will be listed until the bottom of the page before it wraps to the top again?</p>
+
+		<div class="reply">
+			<a class="comment-reply-link" href="http://sickdesigner.com/masonry-css-getting-awesome-with-css3/?replytocom=1465#respond" onclick="return addComment.moveForm(&quot;div-comment-1465&quot;, &quot;1465&quot;, &quot;respond&quot;, &quot;1661&quot;)">Reply</a>		</div>
+				</div>
+		<ul class="children">
+		<li class="comment odd alt depth-2" id="comment-1473">
+				<div id="div-comment-1473" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt="" src="./Sickdesigner.com › Masonry in CSS_files/7e53e8cb9fc909f7a2155c19d49299ff" class="avatar avatar-32 photo" height="32" width="32">			<cite class="fn"><a href="http://sotiriskalathas.gr/" rel="external nofollow" class="url">Sotiris Kalathas</a></cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://sickdesigner.com/masonry-css-getting-awesome-with-css3/#comment-1473">
+			May 10 at 3:37 pm</a>		</div>
+
+		<p>If you don’t use columns but only  display: inline-block on the elements you want o align, you get something like this: (I marked the posts 1-4 chronologically) <a href="http://sotiriskalathas.gr/tests/css_masonry.jpg" rel="nofollow">http://sotiriskalathas.gr/tests/css_masonry.jpg</a> . <img src="./Sickdesigner.com › Masonry in CSS_files/icon_sad.gif" alt=":-(" class="wp-smiley"> </p>
+
+		<div class="reply">
+			<a class="comment-reply-link" href="http://sickdesigner.com/masonry-css-getting-awesome-with-css3/?replytocom=1473#respond" onclick="return addComment.moveForm(&quot;div-comment-1473&quot;, &quot;1473&quot;, &quot;respond&quot;, &quot;1661&quot;)">Reply</a>		</div>
+				</div>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+		<li class="comment even thread-even depth-1" id="comment-1466">
+				<div id="div-comment-1466" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt="" src="./Sickdesigner.com › Masonry in CSS_files/0d5361ecbc5b7e64a75276302a2e0670" class="avatar avatar-32 photo" height="32" width="32">			<cite class="fn"><a href="http://www.falconwhite.com/" rel="external nofollow" class="url">Marcel</a></cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://sickdesigner.com/masonry-css-getting-awesome-with-css3/#comment-1466">
+			May 10 at 8:45 am</a>		</div>
+
+		<p>Love it! Except for Safari. Got the same problem with 5.0.5. He somehow kicks the content out of the boxes.</p>
+<p>But I’m confident, that there has to be some workaround for that!</p>
+
+		<div class="reply">
+			<a class="comment-reply-link" href="http://sickdesigner.com/masonry-css-getting-awesome-with-css3/?replytocom=1466#respond" onclick="return addComment.moveForm(&quot;div-comment-1466&quot;, &quot;1466&quot;, &quot;respond&quot;, &quot;1661&quot;)">Reply</a>		</div>
+				</div>
+		</li><!-- #comment-## -->
+		<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-1468">
+				<div id="div-comment-1468" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt="" src="./Sickdesigner.com › Masonry in CSS_files/7e53e8cb9fc909f7a2155c19d49299ff" class="avatar avatar-32 photo" height="32" width="32">			<cite class="fn"><a href="http://sotiriskalathas.gr/" rel="external nofollow" class="url">Sotiris Kalathas</a></cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://sickdesigner.com/masonry-css-getting-awesome-with-css3/#comment-1468">
+			May 10 at 12:56 pm</a>		</div>
+
+		<p>Aawesome!!!</p>
+<p>The CSS-only solution works 100% for me in Firefox and Opera, Chrome does a decent job, Safari aligns the items like a pyramid and IE9 actually works for me!</p>
+
+		<div class="reply">
+			<a class="comment-reply-link" href="http://sickdesigner.com/masonry-css-getting-awesome-with-css3/?replytocom=1468#respond" onclick="return addComment.moveForm(&quot;div-comment-1468&quot;, &quot;1468&quot;, &quot;respond&quot;, &quot;1661&quot;)">Reply</a>		</div>
+				</div>
+		</li><!-- #comment-## -->
+		<li class="comment even thread-even depth-1" id="comment-1472">
+				<div id="div-comment-1472" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt="" src="./Sickdesigner.com › Masonry in CSS_files/4b4efa1c9c25f00f7a6de3d13f0870ad" class="avatar avatar-32 photo" height="32" width="32">			<cite class="fn">Rhokstar</cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://sickdesigner.com/masonry-css-getting-awesome-with-css3/#comment-1472">
+			May 10 at 3:12 pm</a>		</div>
+
+		<p>Why does it have to be midget?</p>
+
+		<div class="reply">
+			<a class="comment-reply-link" href="http://sickdesigner.com/masonry-css-getting-awesome-with-css3/?replytocom=1472#respond" onclick="return addComment.moveForm(&quot;div-comment-1472&quot;, &quot;1472&quot;, &quot;respond&quot;, &quot;1661&quot;)">Reply</a>		</div>
+				</div>
+		</li><!-- #comment-## -->
+		<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-1482">
+				<div id="div-comment-1482" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt="" src="./Sickdesigner.com › Masonry in CSS_files/00c96c549dcd95280960254905064005" class="avatar avatar-32 photo" height="32" width="32">			<cite class="fn">onioneye</cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://sickdesigner.com/masonry-css-getting-awesome-with-css3/#comment-1482">
+			May 14 at 11:04 am</a>		</div>
+
+		<p>LOL, your comments are hilarious. Oh, oh, now please do a joke on me on how I delebaretely misspelled the word deliberately, you schmuck <img src="./Sickdesigner.com › Masonry in CSS_files/icon_razz.gif" alt=":P" class="wp-smiley"> </p>
+
+		<div class="reply">
+			<a class="comment-reply-link" href="http://sickdesigner.com/masonry-css-getting-awesome-with-css3/?replytocom=1482#respond" onclick="return addComment.moveForm(&quot;div-comment-1482&quot;, &quot;1482&quot;, &quot;respond&quot;, &quot;1661&quot;)">Reply</a>		</div>
+				</div>
+		</li><!-- #comment-## -->
+		<li class="comment even thread-even depth-1" id="comment-1511">
+				<div id="div-comment-1511" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt="" src="./Sickdesigner.com › Masonry in CSS_files/49cfd14068917b2d011e77909ff3c1f9" class="avatar avatar-32 photo" height="32" width="32">			<cite class="fn"><a href="http://51websitedesign.com/" rel="external nofollow" class="url">51 Website Design</a></cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://sickdesigner.com/masonry-css-getting-awesome-with-css3/#comment-1511">
+			May 20 at 8:33 pm</a>		</div>
+
+		<p>I love this idea. I had a project that required this to be done. Oh well, I can use it next time, however now =].</p>
+<p>Thanks for the plugin. This will help a lot of people who need it.</p>
+
+		<div class="reply">
+			<a class="comment-reply-link" href="http://sickdesigner.com/masonry-css-getting-awesome-with-css3/?replytocom=1511#respond" onclick="return addComment.moveForm(&quot;div-comment-1511&quot;, &quot;1511&quot;, &quot;respond&quot;, &quot;1661&quot;)">Reply</a>		</div>
+				</div>
+		</li><!-- #comment-## -->
+		<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-1547">
+				<div id="div-comment-1547" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt="" src="./Sickdesigner.com › Masonry in CSS_files/44ef7638cab91d97ccb3ff07f35f4c21" class="avatar avatar-32 photo" height="32" width="32">			<cite class="fn"><a href="http://www.gustavoatar.com/blog" rel="external nofollow" class="url">Gustavo</a></cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://sickdesigner.com/masonry-css-getting-awesome-with-css3/#comment-1547">
+			May 31 at 4:33 pm</a>		</div>
+
+		<p>I love CSS, loathe inconsistent browsers, thanks for the tip, bookmarked.</p>
+
+		<div class="reply">
+			<a class="comment-reply-link" href="http://sickdesigner.com/masonry-css-getting-awesome-with-css3/?replytocom=1547#respond" onclick="return addComment.moveForm(&quot;div-comment-1547&quot;, &quot;1547&quot;, &quot;respond&quot;, &quot;1661&quot;)">Reply</a>		</div>
+				</div>
+		</li><!-- #comment-## -->
+		<li class="comment even thread-even depth-1" id="comment-1596">
+				<div id="div-comment-1596" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt="" src="./Sickdesigner.com › Masonry in CSS_files/c848a61ab046b7c7073320dcf488f271" class="avatar avatar-32 photo" height="32" width="32">			<cite class="fn">Shaun</cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://sickdesigner.com/masonry-css-getting-awesome-with-css3/#comment-1596">
+			October 13 at 3:10 am</a>		</div>
+
+		<p>Well done sir.</p>
+
+		<div class="reply">
+			<a class="comment-reply-link" href="http://sickdesigner.com/masonry-css-getting-awesome-with-css3/?replytocom=1596#respond" onclick="return addComment.moveForm(&quot;div-comment-1596&quot;, &quot;1596&quot;, &quot;respond&quot;, &quot;1661&quot;)">Reply</a>		</div>
+				</div>
+		</li><!-- #comment-## -->
+		<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-1597">
+				<div id="div-comment-1597" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt="" src="./Sickdesigner.com › Masonry in CSS_files/54c8a96f909b5199c26ac7b2f7dfed48" class="avatar avatar-32 photo" height="32" width="32">			<cite class="fn"><a href="http://aex-studio.com/" rel="external nofollow" class="url">Hugo Nascimento</a></cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://sickdesigner.com/masonry-css-getting-awesome-with-css3/#comment-1597">
+			October 17 at 10:32 pm</a>		</div>
+
+		<p>Hi. Great article!<br>
+I seem to be stuck on IE9 compatibility. I have an indexhibit plugin with masonry.<br>
+I’ve already reinstalled with latest jquery from <a href="http://masonry.desandro.com/" rel="nofollow">http://masonry.desandro.com/</a> and made your tip on browser compatibility, but still tha images don’t appear in height.</p>
+<p>They only appear in width.</p>
+<p>In firefox and google chrome all works perfectly.</p>
+<p>coud you help?</p>
+<p>thank you<br>
+hugo</p>
+
+		<div class="reply">
+			<a class="comment-reply-link" href="http://sickdesigner.com/masonry-css-getting-awesome-with-css3/?replytocom=1597#respond" onclick="return addComment.moveForm(&quot;div-comment-1597&quot;, &quot;1597&quot;, &quot;respond&quot;, &quot;1661&quot;)">Reply</a>		</div>
+				</div>
+		</li><!-- #comment-## -->
+		<li class="comment even thread-even depth-1" id="comment-1706">
+				<div id="div-comment-1706" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt="" src="./Sickdesigner.com › Masonry in CSS_files/acd63fbc8031d217726670b59a41458b" class="avatar avatar-32 photo" height="32" width="32">			<cite class="fn"><a href="http://iamnotsam.com/" rel="external nofollow" class="url">Sam Wilson</a></cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://sickdesigner.com/masonry-css-getting-awesome-with-css3/#comment-1706">
+			January 31 at 2:51 pm</a>		</div>
+
+		<p>This saved me a lot of time, thanks.</p>
+
+		<div class="reply">
+			<a class="comment-reply-link" href="http://sickdesigner.com/masonry-css-getting-awesome-with-css3/?replytocom=1706#respond" onclick="return addComment.moveForm(&quot;div-comment-1706&quot;, &quot;1706&quot;, &quot;respond&quot;, &quot;1661&quot;)">Reply</a>		</div>
+				</div>
+		</li><!-- #comment-## -->
+		<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-1716">
+				<div id="div-comment-1716" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt="" src="./Sickdesigner.com › Masonry in CSS_files/2b48b071e5223b274120b60048e2b865" class="avatar avatar-32 photo" height="32" width="32">			<cite class="fn">Brad</cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://sickdesigner.com/masonry-css-getting-awesome-with-css3/#comment-1716">
+			March 15 at 9:35 am</a>		</div>
+
+		<p>Well played, good sir. I like this.</p>
+
+		<div class="reply">
+			<a class="comment-reply-link" href="http://sickdesigner.com/masonry-css-getting-awesome-with-css3/?replytocom=1716#respond" onclick="return addComment.moveForm(&quot;div-comment-1716&quot;, &quot;1716&quot;, &quot;respond&quot;, &quot;1661&quot;)">Reply</a>		</div>
+				</div>
+		</li><!-- #comment-## -->
+		<li class="comment even thread-even depth-1 parent" id="comment-1717">
+				<div id="div-comment-1717" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt="" src="./Sickdesigner.com › Masonry in CSS_files/ff0c3ac723439663e572370835dab136" class="avatar avatar-32 photo" height="32" width="32">			<cite class="fn">Catherine</cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://sickdesigner.com/masonry-css-getting-awesome-with-css3/#comment-1717">
+			March 19 at 12:05 pm</a>		</div>
+
+		<p>Nice solution Thanks.<br>
+But, as I tried to use it on my design it worked well in FF but I had surprises in Chrome and Opera (didn’t try Safari and IE,well I usually don’t even bother… I’m bad I know).<br>
+The “bricks” of my layout have img background and CSS rounded corners -&gt; those are gone on one side in Chrome and Opera. And the gaps are way bigger than expected, nothing like the 20px I had set.<br>
+Also, I have 12 bricks of diverse sizes: FF and Chrome arranged them in 4 columns of 3, Opera in 2 col of 4, one of 3 and a lonely element in the last… (Don’t ask the opera guys to effectively fill the trucks when  moving out… Or are they hooked on some sort of alternative sokoban? <img src="./Sickdesigner.com › Masonry in CSS_files/icon_wink.gif" alt=";-)" class="wp-smiley">  )<br>
+And btw, checking your homepage,  the links and effects only worked in the 1st row in Opera, worked fine in FF and Chrome. (Or is it just me?)<br>
+Anyway, if you have some good advices to straighten things up in Opera and Chrome, I’m listening.<br>
+And keep on with the good work mate <img src="./Sickdesigner.com › Masonry in CSS_files/icon_smile.gif" alt=":-)" class="wp-smiley"> </p>
+
+		<div class="reply">
+			<a class="comment-reply-link" href="http://sickdesigner.com/masonry-css-getting-awesome-with-css3/?replytocom=1717#respond" onclick="return addComment.moveForm(&quot;div-comment-1717&quot;, &quot;1717&quot;, &quot;respond&quot;, &quot;1661&quot;)">Reply</a>		</div>
+				</div>
+		<ul class="children">
+		<li class="comment odd alt depth-2" id="comment-1718">
+				<div id="div-comment-1718" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt="" src="./Sickdesigner.com › Masonry in CSS_files/ff0c3ac723439663e572370835dab136" class="avatar avatar-32 photo" height="32" width="32">			<cite class="fn">Catherine</cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://sickdesigner.com/masonry-css-getting-awesome-with-css3/#comment-1718">
+			March 19 at 1:23 pm</a>		</div>
+
+		<p>Resolved gap and round corners problems by applying a different size to the parent width and a margin-left on it and not the children…<br>
+Yep, size is all that counts <img src="./Sickdesigner.com › Masonry in CSS_files/icon_wink.gif" alt=";-)" class="wp-smiley"><br>
+but as the columns population arrangement goes it’s weird since Opera dev sheet says the default on Opera is balanced columns…</p>
+
+		<div class="reply">
+			<a class="comment-reply-link" href="http://sickdesigner.com/masonry-css-getting-awesome-with-css3/?replytocom=1718#respond" onclick="return addComment.moveForm(&quot;div-comment-1718&quot;, &quot;1718&quot;, &quot;respond&quot;, &quot;1661&quot;)">Reply</a>		</div>
+				</div>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+		<li class="comment even thread-odd thread-alt depth-1" id="comment-1720">
+				<div id="div-comment-1720" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt="" src="./Sickdesigner.com › Masonry in CSS_files/9c8d846cd3c1ef486493afbb0bfe78f6" class="avatar avatar-32 photo" height="32" width="32">			<cite class="fn">Davide</cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://sickdesigner.com/masonry-css-getting-awesome-with-css3/#comment-1720">
+			March 26 at 2:03 pm</a>		</div>
+
+		<p>thanks radu, i’m asking my self if i want to create the internal boxes with different width from each other with percentage, that always make a sum of 100%  i can i do?</p>
+
+		<div class="reply">
+			<a class="comment-reply-link" href="http://sickdesigner.com/masonry-css-getting-awesome-with-css3/?replytocom=1720#respond" onclick="return addComment.moveForm(&quot;div-comment-1720&quot;, &quot;1720&quot;, &quot;respond&quot;, &quot;1661&quot;)">Reply</a>		</div>
+				</div>
+		</li><!-- #comment-## -->
+		<li class="comment odd alt thread-even depth-1" id="comment-1738">
+				<div id="div-comment-1738" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt="" src="./Sickdesigner.com › Masonry in CSS_files/429dffc0d12c97653153b5afef93f368" class="avatar avatar-32 photo" height="32" width="32">			<cite class="fn"><a href="http://www.parisforaweekend.com/" rel="external nofollow" class="url">Geert-Jan Brits</a></cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://sickdesigner.com/masonry-css-getting-awesome-with-css3/#comment-1738">
+			May 9 at 10:12 am</a>		</div>
+
+		<p>Great stuff! I was looking for a css-only way to do a Pinterest-layout. Tada ! <img src="./Sickdesigner.com › Masonry in CSS_files/icon_smile.gif" alt=":)" class="wp-smiley"> </p>
+
+		<div class="reply">
+			<a class="comment-reply-link" href="http://sickdesigner.com/masonry-css-getting-awesome-with-css3/?replytocom=1738#respond" onclick="return addComment.moveForm(&quot;div-comment-1738&quot;, &quot;1738&quot;, &quot;respond&quot;, &quot;1661&quot;)">Reply</a>		</div>
+				</div>
+		</li><!-- #comment-## -->
+		<li class="comment even thread-odd thread-alt depth-1 parent" id="comment-1972">
+				<div id="div-comment-1972" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt="" src="./Sickdesigner.com › Masonry in CSS_files/d5dbb96561a4e79bbe3f1e85940c5bc2" class="avatar avatar-32 photo" height="32" width="32">			<cite class="fn">Alex Oviedo</cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://sickdesigner.com/masonry-css-getting-awesome-with-css3/#comment-1972">
+			September 30 at 5:10 pm</a>		</div>
+
+		<p>Just got introduced to your blog via Smashing.  Awesome!  I’m new to web development an you have been out on my favorites!</p>
+
+		<div class="reply">
+			<a class="comment-reply-link" href="http://sickdesigner.com/masonry-css-getting-awesome-with-css3/?replytocom=1972#respond" onclick="return addComment.moveForm(&quot;div-comment-1972&quot;, &quot;1972&quot;, &quot;respond&quot;, &quot;1661&quot;)">Reply</a>		</div>
+				</div>
+		<ul class="children">
+		<li class="comment byuser comment-author-radu bypostauthor odd alt depth-2" id="comment-1980">
+				<div id="div-comment-1980" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt="" src="./Sickdesigner.com › Masonry in CSS_files/96fd62089ba92fa2cc24d63085db409a" class="avatar avatar-32 photo" height="32" width="32">			<cite class="fn"><a href="http://sickdesigner.com/" rel="external nofollow" class="url">Radu Chelariu</a></cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://sickdesigner.com/masonry-css-getting-awesome-with-css3/#comment-1980">
+			September 30 at 10:48 pm</a>		</div>
+
+		<p>Pretty much half of the people who know about this blog have found out courtesy of Vitaly and the Smashing team. I’ve got to shower that man in beer next time I see him!</p>
+
+		<div class="reply">
+			<a class="comment-reply-link" href="http://sickdesigner.com/masonry-css-getting-awesome-with-css3/?replytocom=1980#respond" onclick="return addComment.moveForm(&quot;div-comment-1980&quot;, &quot;1980&quot;, &quot;respond&quot;, &quot;1661&quot;)">Reply</a>		</div>
+				</div>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+		<li class="comment even thread-even depth-1" id="comment-5241">
+				<div id="div-comment-5241" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt="" src="./Sickdesigner.com › Masonry in CSS_files/6bd95b1bcd913093827ec9028446788b" class="avatar avatar-32 photo" height="32" width="32">			<cite class="fn">Mohamed Mansour</cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://sickdesigner.com/masonry-css-getting-awesome-with-css3/#comment-5241">
+			December 12 at 8:28 am</a>		</div>
+
+		<p>It works great in IE10, what issues are you having?</p>
+
+		<div class="reply">
+			<a class="comment-reply-link" href="http://sickdesigner.com/masonry-css-getting-awesome-with-css3/?replytocom=5241#respond" onclick="return addComment.moveForm(&quot;div-comment-5241&quot;, &quot;5241&quot;, &quot;respond&quot;, &quot;1661&quot;)">Reply</a>		</div>
+				</div>
+		</li><!-- #comment-## -->
+		<li class="comment odd alt thread-odd thread-alt depth-1 parent" id="comment-5257">
+				<div id="div-comment-5257" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt="" src="./Sickdesigner.com › Masonry in CSS_files/b7f54e956363dfcc2e6b6ee5a9112d1e" class="avatar avatar-32 photo" height="32" width="32">			<cite class="fn"><a href="http://coletownsend.com/" rel="external nofollow" class="url">Cole</a></cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://sickdesigner.com/masonry-css-getting-awesome-with-css3/#comment-5257">
+			January 4 at 7:28 pm</a>		</div>
+
+		<p>Is there any way to reorder these (even with just a short bit of js) so that they run left to right rather than top to bottom?</p>
+
+		<div class="reply">
+			<a class="comment-reply-link" href="http://sickdesigner.com/masonry-css-getting-awesome-with-css3/?replytocom=5257#respond" onclick="return addComment.moveForm(&quot;div-comment-5257&quot;, &quot;5257&quot;, &quot;respond&quot;, &quot;1661&quot;)">Reply</a>		</div>
+				</div>
+		<ul class="children">
+		<li class="comment byuser comment-author-radu bypostauthor even depth-2" id="comment-5259">
+				<div id="div-comment-5259" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt="" src="./Sickdesigner.com › Masonry in CSS_files/96fd62089ba92fa2cc24d63085db409a" class="avatar avatar-32 photo" height="32" width="32">			<cite class="fn"><a href="http://sickdesigner.com/" rel="external nofollow" class="url">Radu Chelariu</a></cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://sickdesigner.com/masonry-css-getting-awesome-with-css3/#comment-5259">
+			January 15 at 8:22 am</a>		</div>
+
+		<p>Unfortunately, no, as of this time there is no property to allow for horizontal spanning of column content. Though, just like yourself, I wish there were.</p>
+
+		<div class="reply">
+			<a class="comment-reply-link" href="http://sickdesigner.com/masonry-css-getting-awesome-with-css3/?replytocom=5259#respond" onclick="return addComment.moveForm(&quot;div-comment-5259&quot;, &quot;5259&quot;, &quot;respond&quot;, &quot;1661&quot;)">Reply</a>		</div>
+				</div>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+		<li class="comment odd alt thread-even depth-1 parent" id="comment-5278">
+				<div id="div-comment-5278" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt="" src="./Sickdesigner.com › Masonry in CSS_files/64ae560d1ef14ff6d765381aa37fee1f" class="avatar avatar-32 photo" height="32" width="32">			<cite class="fn"><a href="http://ivomynttinen.com/" rel="external nofollow" class="url">Ivo Mynttinen</a></cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://sickdesigner.com/masonry-css-getting-awesome-with-css3/#comment-5278">
+			March 30 at 5:26 pm</a>		</div>
+
+		<p>Your HTML is incorrect in line 1. Should be , not &lt;div&lt;.</p>
+
+		<div class="reply">
+			<a class="comment-reply-link" href="http://sickdesigner.com/masonry-css-getting-awesome-with-css3/?replytocom=5278#respond" onclick="return addComment.moveForm(&quot;div-comment-5278&quot;, &quot;5278&quot;, &quot;respond&quot;, &quot;1661&quot;)">Reply</a>		</div>
+				</div>
+		<ul class="children">
+		<li class="comment byuser comment-author-radu bypostauthor even depth-2" id="comment-5282">
+				<div id="div-comment-5282" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt="" src="./Sickdesigner.com › Masonry in CSS_files/96fd62089ba92fa2cc24d63085db409a" class="avatar avatar-32 photo" height="32" width="32">			<cite class="fn"><a href="http://sickdesigner.com/" rel="external nofollow" class="url">Radu Chelariu</a></cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://sickdesigner.com/masonry-css-getting-awesome-with-css3/#comment-5282">
+			April 2 at 11:22 am</a>		</div>
+
+		<p>Thanks for pointing that out; I fixed it now.</p>
+
+		<div class="reply">
+			<a class="comment-reply-link" href="http://sickdesigner.com/masonry-css-getting-awesome-with-css3/?replytocom=5282#respond" onclick="return addComment.moveForm(&quot;div-comment-5282&quot;, &quot;5282&quot;, &quot;respond&quot;, &quot;1661&quot;)">Reply</a>		</div>
+				</div>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+		<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-5512">
+				<div id="div-comment-5512" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt="" src="./Sickdesigner.com › Masonry in CSS_files/cefe188a3b289a88ff76a1520fce60d0" class="avatar avatar-32 photo" height="32" width="32">			<cite class="fn">Webbower</cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://sickdesigner.com/masonry-css-getting-awesome-with-css3/#comment-5512">
+			June 27 at 1:42 am</a>		</div>
+
+		<p>This is an awesome trick. However, as noted by others, it’s not quite the Masonry effect. Masonry works left-to-right whereas this works top-to-bottom. In and of itself, this is not a huge issue. However, it becomes a big issue when you try to recreate the Pinterest experience of injecting more tiles into the layout. What was at the top of column 2 will now be somewhere down column 1.</p>
+<p>Example here: <a href="http://jsfiddle.net/webbower/5h6xT/" rel="nofollow">http://jsfiddle.net/webbower/5h6xT/</a> </p>
+<p>I am by no means shooting this down, just pointing out pitfalls.</p>
+
+		<div class="reply">
+			<a class="comment-reply-link" href="http://sickdesigner.com/masonry-css-getting-awesome-with-css3/?replytocom=5512#respond" onclick="return addComment.moveForm(&quot;div-comment-5512&quot;, &quot;5512&quot;, &quot;respond&quot;, &quot;1661&quot;)">Reply</a>		</div>
+				</div>
+		</li><!-- #comment-## -->
+		<li class="comment even thread-even depth-1" id="comment-5513">
+				<div id="div-comment-5513" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt="" src="./Sickdesigner.com › Masonry in CSS_files/58f31e67b0a1c58b1bf9e3b84148db6a" class="avatar avatar-32 photo" height="32" width="32">			<cite class="fn"><a href="http://clintmilner.com/" rel="external nofollow" class="url">Clint</a></cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://sickdesigner.com/masonry-css-getting-awesome-with-css3/#comment-5513">
+			July 3 at 4:01 pm</a>		</div>
+
+		<p>Setting the OL to a percent width and IMG to 100% width give a nice responsive feel if you’re not using iframes in your layout.</p>
+<p>Thanks!</p>
+
+		<div class="reply">
+			<a class="comment-reply-link" href="http://sickdesigner.com/masonry-css-getting-awesome-with-css3/?replytocom=5513#respond" onclick="return addComment.moveForm(&quot;div-comment-5513&quot;, &quot;5513&quot;, &quot;respond&quot;, &quot;1661&quot;)">Reply</a>		</div>
+				</div>
+		</li><!-- #comment-## -->
+		<li class="comment odd alt thread-odd thread-alt depth-1" id="comment-5518">
+				<div id="div-comment-5518" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt="" src="./Sickdesigner.com › Masonry in CSS_files/58d6a9c86173bd29c9379e4ce204a8e0" class="avatar avatar-32 photo" height="32" width="32">			<cite class="fn"><a href="http://avetis.fr/" rel="external nofollow" class="url">avetisk</a></cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://sickdesigner.com/masonry-css-getting-awesome-with-css3/#comment-5518">
+			July 15 at 9:58 am</a>		</div>
+
+		<p>It worths to notice that in Chrome combining transition with columns is not a good idea: <a href="https://code.google.com/p/chromium/issues/detail?id=177556" rel="nofollow">https://code.google.com/p/chromium/issues/detail?id=177556</a></p>
+<p>So if you were about to use the pure CSS solution, forget it for now.</p>
+
+		<div class="reply">
+			<a class="comment-reply-link" href="http://sickdesigner.com/masonry-css-getting-awesome-with-css3/?replytocom=5518#respond" onclick="return addComment.moveForm(&quot;div-comment-5518&quot;, &quot;5518&quot;, &quot;respond&quot;, &quot;1661&quot;)">Reply</a>		</div>
+				</div>
+		</li><!-- #comment-## -->
+
+	</ol>
+
+
+
+<div id="respond">
+	<h3>Speak your mind</h3>
+	
+	<form action="http://sickdesigner.com/wp-comments-post.php" method="post" id="commentform" class="fixed" style="width: 272px;">
+		
+		<fieldset>
+			<label for="author"><small>Name (*)</small></label>
+			<input type="text" name="author" id="author" value="" size="40" tabindex="1" style="background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAABHklEQVQ4EaVTO26DQBD1ohQWaS2lg9JybZ+AK7hNwx2oIoVf4UPQ0Lj1FdKktevIpel8AKNUkDcWMxpgSaIEaTVv3sx7uztiTdu2s/98DywOw3Dued4Who/M2aIx5lZV1aEsy0+qiwHELyi+Ytl0PQ69SxAxkWIA4RMRTdNsKE59juMcuZd6xIAFeZ6fGCdJ8kY4y7KAuTRNGd7jyEBXsdOPE3a0QGPsniOnnYMO67LgSQN9T41F2QGrQRRFCwyzoIF2qyBuKKbcOgPXdVeY9rMWgNsjf9ccYesJhk3f5dYT1HX9gR0LLQR30TnjkUEcx2uIuS4RnI+aj6sJR0AM8AaumPaM/rRehyWhXqbFAA9kh3/8/NvHxAYGAsZ/il8IalkCLBfNVAAAAABJRU5ErkJggg==); background-attachment: scroll; background-position: 100% 50%; background-repeat: no-repeat;">
+		</fieldset>
+		<fieldset>
+			<label for="email"><small>Mail (*)</small></label>
+		<input type="text" name="email" id="email" value="" size="40" tabindex="2">
+		</fieldset>
+		<fieldset>
+			<label for="url"><small>Website</small></label>
+			<input type="text" name="url" id="url" value="" size="40" tabindex="3">
+		</fieldset>
+
+		
+		<fieldset>
+			<textarea placeholder="A line. Drop one." name="comment" id="comment" cols="60" rows="10" tabindex="4"></textarea>
+		</fieldset>
+
+		<input name="submit" type="submit" id="submit" tabindex="5" value="Submit Comment">
+		<input type="hidden" name="comment_post_ID" value="1661">
+
+		<p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="7a9f930ba4"></p>	</form>
+</div>
+
+                    </div>
+
+                                        <span id="next"><a href="http://sickdesigner.com/breaking-the-line-break/" rel="next">Breaking the line break</a></span>                                     </div>
+			</section>
+            <script type="text/javascript">
+                $(document).ready(function() {
+                    // Comment form sticky
+                    var commentOffset = $('#commentform').offset();
+                    var commentPositionTop = commentOffset.top;
+                    var commentFixedWidth = $('#comments #respond').width();
+                    
+                    $(window).scroll(function () {
+                        var y = $(this).scrollTop();
+                        if (y > commentPositionTop) {
+                          // if so, ad the fixed class
+                          $('#commentform').addClass('fixed').css('width' , commentFixedWidth+'px');
+                        } else {
+                          // otherwise remove it
+                          $('#commentform').removeClass('fixed');
+                        }
+                    });
+                });
+            </script>
+        </div>  
+        <div class="overlay"></div>  
+        <script type="text/javascript" src="./Sickdesigner.com › Masonry in CSS_files/formidable.js"></script>
+        <script type="text/javascript" src="./Sickdesigner.com › Masonry in CSS_files/custom.js"></script>     
+    
+
+
+
+
+<!-- Performance optimized by W3 Total Cache. Learn more: http://www.w3-edge.com/wordpress-plugins/
+
+Page Caching using disk: enhanced
+Database Caching 1/7 queries in 0.006 seconds using disk
+Object Caching 2543/2622 objects using disk
+
+ Served from: sickdesigner.com @ 2014-11-06 19:50:41 by W3 Total Cache --><script id="hiddenlpsubmitdiv" style="display: none;"></script><script>try{for(var lastpass_iter=0; lastpass_iter < document.forms.length; lastpass_iter++){ var lastpass_f = document.forms[lastpass_iter]; if(typeof(lastpass_f.lpsubmitorig2)=="undefined"){ lastpass_f.lpsubmitorig2 = lastpass_f.submit; lastpass_f.submit = function(){ var form=this; var customEvent = document.createEvent("Event"); customEvent.initEvent("lpCustomEvent", true, true); var d = document.getElementById("hiddenlpsubmitdiv"); if (d) {for(var i = 0; i < document.forms.length; i++){ if(document.forms[i]==form){ d.innerText=i; } } d.dispatchEvent(customEvent); }form.lpsubmitorig2(); } } }}catch(e){}</script></body></html>
