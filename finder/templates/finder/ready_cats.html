@@ -8,7 +8,9 @@
 		        <h1><a href="{% url 'finder.views.cat_detail' pk=kitty.pk %}">{{ kitty.name }}</a></h1>
 		        <h2> {{ kitty.gender }} | {{kitty.age}} | {{ kitty.breed }}</h2>
 		        <p> <i>{{kitty.location.name}}</i> </p>
-                <img src="{{kitty.photo}}" width="100" height="100"/>
+                {% if  kitty.photo %}
+                <img src="{{kitty.photo.url}}" width="100" height="100"/>
+                {% endif %}
             </div>
             {% endfor %}
         </div>
