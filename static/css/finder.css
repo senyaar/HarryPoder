@@ -32,17 +32,18 @@ max-height: : 10%;
     -webkit-column-count: 3;
     -webkit-column-gap: 10px;
     column-count: 3;
-    column-gap: 10px;
-    width: 100%x; 
-    height: 75%;
+    column-gap: 1em;
+    width: 960px;
 }
 
-.stretch.panel {
-    display: inline;
+.stretch panel {
+    display: inline-block;
     margin-top: 10px;
     margin-bottom: 10px;
-    height: 100%;
-    width: 100%;
+    vertical-align: top;
+    position: relative;
+    width: 32.5%;
+    height: 300px;
 }
 
 

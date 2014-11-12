@@ -21,8 +21,8 @@ class Kitty(models.Model):
     breed = models.CharField(choices = BREED_CHOICES, max_length=30, default = 'Un')
 
     about = models.TextField()
-    photo = models.FileField(upload_to=get_upload_file_name, max_length=100)
-    
+    photo = models.ImageField(null=True)
+
     posted_date = models.DateTimeField(default=timezone.now)
 
     STATUS_CHOICES = ( ('Need', 'Needs a home'), ('Adopted!','Adopted!') )
