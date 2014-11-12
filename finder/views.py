@@ -27,7 +27,7 @@ def cat_detail(request, pk):
 
 def add_cat(request):
     if request.method == "POST":
-        form = AddCat(request.POST)
+        form = AddCat(request.POST, request.FILES)
         if form.is_valid():
             post = form.save(commit=False)
             post.author = request.user
@@ -41,7 +41,7 @@ def add_cat(request):
 def edit_cat(request, pk):
     post = get_object_or_404(Kitty, pk=pk)
     if request.method == "POST":
-        form = AddCat(request.POST, instance=post)
+        form = AddCat(request.POST, request.FILES, instance=post)
         if form.is_valid():
             post = form.save(commit=False)
             post.author = request.user
