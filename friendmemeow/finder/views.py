@@ -1,9 +1,11 @@
 from django.shortcuts import render, get_object_or_404
-from .models import Kitty
-from .forms import AddCat
+# from .models import Kitty
+# from .forms import AddCat
 from django.core.urlresolvers import reverse
 from django.shortcuts import redirect
 from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
+from friendmemeow.finder.forms import AddCat
+from friendmemeow.finder.models import Kitty
 
 
 def ready_cats(request):

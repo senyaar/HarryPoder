@@ -1,6 +1,8 @@
 from django import forms
 
-from .models import Kitty
+# from .models import Kitty
+from friendmemeow.finder.models import Kitty
+
 
 class AddCat(forms.ModelForm):
 
