@@ -27,6 +27,7 @@ def cat_detail(request, pk):
     kitty = get_object_or_404(Kitty, pk=pk)
     return render(request, 'finder/cat_detail.html', {'kitty': kitty})
 
+
 def add_cat(request):
     if request.method == "POST":
         form = AddCat(request.POST, request.FILES)

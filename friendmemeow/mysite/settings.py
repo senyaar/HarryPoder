@@ -83,7 +83,7 @@ USE_TZ = False
 
 STATIC_URL = '/static/'
 
-MEDIA_ROOT = 'home/msenar/coding/friendmemeow/images/'
+MEDIA_ROOT = 'media/'
 
 MEDIA_URL = '/media/'
 
@@ -92,7 +92,7 @@ STATICFILES_DIRS = (
 )
 
 import dj_database_url
-DATABASES['default'] =  dj_database_url.config()
+DATABASES['default'] = dj_database_url.config()
 
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
