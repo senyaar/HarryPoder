@@ -3,8 +3,8 @@ from django.utils import timezone
 
 
 def get_upload_file_name(instance, filename):
-	index = len(Kitty.objects.all()) + 1
-	return "images/%s_%s" % ('cat', index)
+    index = len(Kitty.objects.all()) + 1
+    return "images/%s_%s" % ('cat', index)
 
 
 class Kitty(models.Model):

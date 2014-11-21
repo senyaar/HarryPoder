@@ -3,29 +3,21 @@ from django.shortcuts import render, get_object_or_404
 # from .forms import AddCat
 from django.core.urlresolvers import reverse
 from django.shortcuts import redirect
-from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 from finder.forms import AddCat
 from finder.models import Kitty
+from finder.functions import half_age_plus_seven, nineCatsPerPage
 
 
 def ready_cats(request):
-    cats = Kitty.objects.filter(status__contains='Need').order_by('-posted_date')
-    paginator = Paginator(cats, 9)
-
     page = request.GET.get('page')
-
-    try:
-        cat_list = paginator.page(page)
-    except PageNotAnInteger:
-        cat_list = paginator.page(1)
-    except EmptyPage:
-        cat_list = paginator.page(paginator.num_pages)
+    cat_list = nineCatsPerPage(page)
     return render(request, 'finder/ready_cats.html', {'cat_list': cat_list})
 
 
 def cat_detail(request, pk):
     kitty = get_object_or_404(Kitty, pk=pk)
-    return render(request, 'finder/cat_detail.html', {'kitty': kitty})
+    age7 = half_age_plus_seven(kitty.age)
+    return render(request, 'finder/cat_detail.html', {'kitty': kitty, 'age7': age7})
 
 
 def add_cat(request):
