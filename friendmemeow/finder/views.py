@@ -1,16 +1,14 @@
-from django.shortcuts import render, get_object_or_404
-# from .models import Kitty
-# from .forms import AddCat
+from django.shortcuts import render, get_object_or_404, redirect, render_to_response
+from django.template import RequestContext
 from django.core.urlresolvers import reverse
-from django.shortcuts import redirect
-from finder.forms import AddCat
-from finder.models import Kitty
-from finder.functions import half_age_plus_seven, nineCatsPerPage
+from .models import Kitty
+from .forms import AddCat
+from .functions import half_age_plus_seven, nine_cats_per_page
 
 
 def ready_cats(request):
     page = request.GET.get('page')
-    cat_list = nineCatsPerPage(page)
+    cat_list = nine_cats_per_page(page)
     return render(request, 'finder/ready_cats.html', {'cat_list': cat_list})
 
 
@@ -20,28 +18,20 @@ def cat_detail(request, pk):
     return render(request, 'finder/cat_detail.html', {'kitty': kitty, 'age7': age7})
 
 
-def add_cat(request):
+def cat_form(request, pk=None):
+    if pk is not None:
+        catID = get_object_or_404(Kitty, pk=pk)
+    else:
+        catID = Kitty()
+
     if request.method == "POST":
-        form = AddCat(request.POST, request.FILES)
+        form = AddCat(request.POST, request.FILES, instance=catID)
         if form.is_valid():
             post = form.save(commit=False)
-            post.author = request.user
             post.save()
             return redirect('finder.views.cat_detail', pk=post.pk)
     else:
-        form = AddCat()
-    return render(request, 'finder/cat_edit.html', {'form': form})
+        form = AddCat(instance=catID)
+    return render_to_response('finder/cat_edit.html', {'form': form}, context_instance=RequestContext(request))
 
 
-def edit_cat(request, pk):
-    post = get_object_or_404(Kitty, pk=pk)
-    if request.method == "POST":
-        form = AddCat(request.POST, request.FILES, instance=post)
-        if form.is_valid():
-            post = form.save(commit=False)
-            post.author = request.user
-            post.save()
-            return redirect('finder.views.cat_detail', pk=post.pk)
-    else:
-        form = AddCat(instance=post)
-    return render(request, 'finder/cat_edit.html', {'form': form})
