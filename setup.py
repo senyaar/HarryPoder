@@ -12,9 +12,12 @@ class DisabledCommands(Command): #not sure if needed, but in the datanav one
     raise Exception('This command is disabled')
 
 requirements = [
-    'Django==1.7.1',
-    'Pillow==2.3.0',
-    'dj_database_url',
+    'Django==1.7.1', #self explanatory
+    'Pillow==2.3.0', #used for image uploads
+    'dj_database_url', #helps manage your urls; django girls
+    'djangorestframework', #api
+    'markdown',       # Markdown support for the browsable API.
+    'django-filter', #Filtering support
 ]
 
 testing_requirements = [

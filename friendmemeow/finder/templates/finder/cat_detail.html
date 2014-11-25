@@ -4,10 +4,10 @@
 <a class="btn btn-default" href="{% url 'edit_cat' pk=kitty.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
 
 <h1>{{kitty.name}}</h1>
-<h2> {{ kitty.gender }} | {{kitty.age}} | {{ kitty.breed }}</h2>
-<br>
+<h2> {{ kitty.gender }} | {{kitty.age}} | {{ kitty.breed }} | {{kitty.weight}} lbs </h2>
 
-<p> {{ kitty.about }}</p><br>
+<h3>About Me!</h3>
+<p> {{kitty.about }}</p><br>
 <b>half your age plus seven rule:</b><br>
        only seeking other cats {{age7}} or older<br>
 <img src="{{kitty.photo.url}}" width="300" height="300"/>
