@@ -20,3 +20,14 @@ def nine_cats_per_page(page):
 
 def half_age_plus_seven(age):
     return (age/2) + 7
+
+
+def monthly_food_cost(weight):
+    daily_calories = 30 * weight
+    cup_calories = 300
+    daily_cups = daily_calories/cup_calories
+    cups_per_bag = 20.74
+    bag_cost = 16
+    return (daily_cups*30)/cups_per_bag * 16
+
+

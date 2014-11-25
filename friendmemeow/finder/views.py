@@ -3,7 +3,7 @@ from django.template import RequestContext
 from django.core.urlresolvers import reverse
 from .models import Kitty
 from .forms import AddCat
-from .functions import half_age_plus_seven, nine_cats_per_page
+from .functions import half_age_plus_seven, nine_cats_per_page, monthly_food_cost
 
 
 def ready_cats(request):
@@ -15,7 +15,8 @@ def ready_cats(request):
 def cat_detail(request, pk):
     kitty = get_object_or_404(Kitty, pk=pk)
     age7 = half_age_plus_seven(kitty.age)
-    return render(request, 'finder/cat_detail.html', {'kitty': kitty, 'age7': age7})
+    food_cost =  monthly_food_cost(kitty.weight)
+    return render(request, 'finder/cat_detail.html', {'kitty': kitty, 'age7': age7, 'food_cost': food_cost})
 
 
 def cat_form(request, pk=None):
