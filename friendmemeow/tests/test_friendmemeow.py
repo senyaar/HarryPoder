@@ -4,12 +4,10 @@ import factory
 import unittest
 from django.core.urlresolvers import resolve
 
-
 sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
 from finder.functions import half_age_plus_seven, monthly_food_cost
 from finder.models import Kitty
 from finder.views import ready_cats, cat_detail
-
 
 
 class KittyFactory(factory.Factory):
