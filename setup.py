@@ -25,6 +25,7 @@ testing_requirements = [
     'py==1.4.26',
     'pytest==2.6.4',
     'pytest-django==2.7.0',
+    'factory-boy==2.4.1',
     'tox',
 ]
 
