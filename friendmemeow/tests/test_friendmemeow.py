@@ -18,6 +18,7 @@ class KittyFactory(factory.Factory):
     age=20
     weight=5
 
+
 class KittyTestCase(unittest.TestCase):
 
     def setUp(self):

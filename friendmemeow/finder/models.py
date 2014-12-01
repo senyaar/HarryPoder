@@ -1,6 +1,9 @@
 from django.db import models
 from django.utils import timezone
 
+GENDER_CHOICES = (('F','Female'), ('M', 'Male'))
+BREED_CHOICES = [('Unknown/Mixed',  'Unknown/Mixed'),('Abyssinian',  'Abyssinian'),('American Bobtail',  'American Bobtail'),('American Curl',  'American Curl'),('American Shorthair',  'American Shorthair'),('American Wirehair',  'American Wirehair'),('Balinese',  'Balinese'),('Birman',  'Birman'),('Bombay',  'Bombay'),('British Shorthair',  'British Shorthair'),('Burmese',  'Burmese'),('Burmilla',  'Burmilla'),('Chartreux',  'Chartreux'),('Chinese Li Hua',  'Chinese Li Hua'),('Colorpoint Shorthair',  'Colorpoint Shorthair'),('Cornish Rex',  'Cornish Rex'),('Devon Rex',  'Devon Rex'),('Egyptian Mau',  'Egyptian Mau'),('European Burmese',  'European Burmese'),('Exotic',  'Exotic'),('Havana Brown',  'Havana Brown'),('Japanese Bobtail',  'Japanese Bobtail'),('Korat',  'Korat'),('LaPerm',  'LaPerm'),('Maine Coon Cat',  'Maine Coon Cat'),('Manx',  'Manx'),('Norwegian Forest Cat',  'Norwegian Forest Cat'),('Ocicat',  'Ocicat'),('Oriental',  'Oriental'),('Persian',  'Persian'),('RagaMuffin',  'RagaMuffin'),('Ragdoll',  'Ragdoll'),('Russian Blue',  'Russian Blue'),('Scottish Fold',  'Scottish Fold'),('Selkirk Rex',  'Selkirk Rex'),('Siamese',  'Siamese'),('Siberian',  'Siberian'),('Singapura',  'Singapura'),('Somali',  'Somali'),('Sphynx',  'Sphynx'),('Tonkinese',  'Tonkinese'),('Turkish Angora',  'Turkish Angora'),('Turkish Van',  'Turkish Van')]
+STATUS_CHOICES = ( ('Need', 'Needs a home'), ('Adopted!','Adopted!') )
 
 def get_upload_file_name(instance, filename):
     index = len(Kitty.objects.all()) + 1
@@ -9,24 +12,16 @@ def get_upload_file_name(instance, filename):
 
 class Kitty(models.Model):
     name = models.CharField(max_length=20)
-    location = models.ForeignKey('Shelter', null = True, blank = True)
-
-    GENDER_CHOICES = (('F','Female'), ('M', 'Male'))
     gender = models.CharField(choices = GENDER_CHOICES, max_length=1, default = 'M')
-
-
     age = models.IntegerField(default=1)
-
-    BREED_CHOICES = [('Unknown/Mixed',  'Unknown/Mixed'),('Abyssinian',  'Abyssinian'),('American Bobtail',  'American Bobtail'),('American Curl',  'American Curl'),('American Shorthair',  'American Shorthair'),('American Wirehair',  'American Wirehair'),('Balinese',  'Balinese'),('Birman',  'Birman'),('Bombay',  'Bombay'),('British Shorthair',  'British Shorthair'),('Burmese',  'Burmese'),('Burmilla',  'Burmilla'),('Chartreux',  'Chartreux'),('Chinese Li Hua',  'Chinese Li Hua'),('Colorpoint Shorthair',  'Colorpoint Shorthair'),('Cornish Rex',  'Cornish Rex'),('Devon Rex',  'Devon Rex'),('Egyptian Mau',  'Egyptian Mau'),('European Burmese',  'European Burmese'),('Exotic',  'Exotic'),('Havana Brown',  'Havana Brown'),('Japanese Bobtail',  'Japanese Bobtail'),('Korat',  'Korat'),('LaPerm',  'LaPerm'),('Maine Coon Cat',  'Maine Coon Cat'),('Manx',  'Manx'),('Norwegian Forest Cat',  'Norwegian Forest Cat'),('Ocicat',  'Ocicat'),('Oriental',  'Oriental'),('Persian',  'Persian'),('RagaMuffin',  'RagaMuffin'),('Ragdoll',  'Ragdoll'),('Russian Blue',  'Russian Blue'),('Scottish Fold',  'Scottish Fold'),('Selkirk Rex',  'Selkirk Rex'),('Siamese',  'Siamese'),('Siberian',  'Siberian'),('Singapura',  'Singapura'),('Somali',  'Somali'),('Sphynx',  'Sphynx'),('Tonkinese',  'Tonkinese'),('Turkish Angora',  'Turkish Angora'),('Turkish Van',  'Turkish Van')]
     breed = models.CharField(choices = BREED_CHOICES, max_length=30, default = 'Un')
     weight = models.IntegerField(default=5)
 
     about = models.TextField()
     photo = models.ImageField(null=True)
 
+    location = models.ForeignKey('Shelter', null = True, blank = True)
     posted_date = models.DateTimeField(default=timezone.now)
-
-    STATUS_CHOICES = ( ('Need', 'Needs a home'), ('Adopted!','Adopted!') )
     status = models.CharField(choices = STATUS_CHOICES, max_length=20, default='Need')
 
 
