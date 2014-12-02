@@ -13,7 +13,7 @@ class DisabledCommands(Command): #not sure if needed, but in the datanav one
 
 requirements = [
     'Django==1.7.1', #self explanatory
-    'Pillow==2.3.0', #used for image uploads
+    'Pillow==2.6.1', #used for image uploads
     'dj_database_url', #helps manage your urls; django girls
     'djangorestframework', #api
     'markdown',       # Markdown support for the browsable API.

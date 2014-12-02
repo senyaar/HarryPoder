@@ -104,7 +104,7 @@ STATIC_ROOT = 'staticfiles'
 DEBUG = True
 
 try:
-    from .local_settings import *
+    from local_settings import *
 except ImportError:
     pass
 
@@ -115,3 +115,5 @@ REST_FRAMEWORK = {
         'rest_framework.permissions.DjangoModelPermissionsOrAnonReadOnly'
     ]
 }
+
+DEFAULT_INDEX_TABLESPACE=''
