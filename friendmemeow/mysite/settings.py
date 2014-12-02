@@ -93,7 +93,7 @@ STATICFILES_DIRS = (
 )
 
 import dj_database_url
-DATABASES['default'] = dj_database_url.config()
+DATABASES['default'] = dj_database_url.config(default='sqlite://db/db.sqlite3')
 
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
@@ -101,7 +101,7 @@ ALLOWED_HOSTS = ['*']
 
 STATIC_ROOT = 'staticfiles'
 
-DEBUG = False
+DEBUG = True
 
 try:
     from .local_settings import *
