@@ -4,7 +4,7 @@ from .models import Kitty, Shelter, GENDER_CHOICES, BREED_CHOICES, STATUS_CHOICE
 class ShelterSerializer(serializers.ModelSerializer):
     class Meta:
         model = Shelter
-        fields = ('name',)
+        fields = ('name', 'address1', 'address2', 'city', 'state', 'zip_code', 'phone', 'email')
 
 class KittySerializer(serializers.ModelSerializer):
     location = ShelterSerializer(source='location')
@@ -12,4 +12,4 @@ class KittySerializer(serializers.ModelSerializer):
     class Meta:
         model = Kitty
         photo = serializers.Field('photo.url')
-        fields = ('name', 'gender', 'age', 'breed', 'weight', 'about', 'photo', 'location', )
+        fields = ('id', 'name', 'gender', 'age', 'breed', 'weight', 'about', 'photo', 'location', )
