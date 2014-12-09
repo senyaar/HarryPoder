@@ -5,6 +5,9 @@ staticfiles
 local_settings.py
 db.sqlite3
 *.pyc
+sqlite3.db
+media/
+datanav/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
