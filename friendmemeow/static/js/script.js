@@ -1,15 +1,29 @@
-(function(){
-var app;
-app = angular.module('catBrowser', []);
+(function() {
+  var app;
 
-app.controller('BrowserController', [
-'$scope', '$http', function($scope, $http) {
+  app = angular.module('catBrowser', ['CatAPI']).config(function($interpolateProvider) {
+    $interpolateProvider.startSymbol('{$');
+    $interpolateProvider.endSymbol('$}');
+});
 
-      return $scope.cats = [
-       {"id": 18, "name": "Michelle", "gender": "F", "age": 1, "breed": "Egyptian Mau", "weight": 5, "about": "test 2", "photo": "./egyptianMau_3EPH7s3.jpg", "location": {"name": "Marcus Pod", "address1": "9191 Towne Center Drive", "address2": "", "city": "San Diego", "state": "CA", "zip_code": 92122, "phone": "1234567890", "email": "marcus.planta@brightscope.com"}},
-        {"id": 19, "name": "Andrew", "gender": "M", "age": 2, "breed": "Exotic", "weight": 5, "about": "test 3", "photo": "./exotic_BsCG7sh.jpg", "location": {"name": "David's \"Fur-Real\" Felines", "address1": "2723 Durant Ave", "address2": "", "city": "Berkeley", "state": "CA", "zip_code": 94704, "phone": "8001234567", "email": "david.lorenz@brightscope.com"}}
+  app.controller('BrowserController', [
+    '$scope', 'Cat', function($scope, Cat) {
+      return $scope.cats = Cat.query();
+    }
+  ]);
 
-      ];
+}).call(this);
+
+(function() {
+  var app;
+
+  app = angular.module('CatAPI', ['ngResource']);
+
+  app.factory('Cat', [
+    '$resource', function($resource) {
+      return $resource('/api/kitty/:name', {
+        name: '@name'
+      }, {'query': {method: 'GET', isArray: false}});
     }
   ]);
 

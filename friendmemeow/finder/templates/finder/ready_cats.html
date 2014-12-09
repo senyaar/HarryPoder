@@ -4,12 +4,10 @@
 {% block ng_controller %}BrowserController{% endblock %}
 {% block content %}
 
-            <div class="panel" ng-repeat="cat in cats">
-                {% verbatim %}
-		        <h1>{{ cat.name }}</a></h1>
-		        <h2> {{ cat.gender }} | {{cat.age}} | {{ cat.breed }}</h2>
-		        <p> <i>{{cat.location.name}}</i> </p>
-                {% endverbatim %}
+            <div class="panel" ng-repeat="cat in cats.results">
+		        <h1>{$ cat.name $}</h1>
+		        <h2> {$ cat.gender $} | {$ cat.age $} | {$ cat.breed $}</h2>
+		        <p> <i>{$ cat.location.name $}</i> </p>
             </div>
 
 
