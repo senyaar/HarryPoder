@@ -9,6 +9,9 @@ from rest_framework import routers
 class HomeView(TemplateView):
     template_name = "finder/ready_cats.html"
 
+class DetailView(TemplateView):
+    template_name = "finder/cat_detail.html"
+
 router = routers.DefaultRouter()
 router.register(r'kitty', views.CatList)
 router.register(r'shelters', views.ShelterList)
@@ -17,7 +20,7 @@ router.register(r'shelters', views.ShelterList)
 urlpatterns = patterns('',
     url(r'^api/', include(router.urls)),
     url(r'^api-auth/', include('rest_framework.urls', namespace='rest_framework')),
-    url(r'^kitty/(?P<pk>[0-9]+)/$', views.CatDetail),
+    url(r'^kitty/(?P<pk>[0-9]+)/$', DetailView.as_view()),
     url(r'^$', HomeView.as_view()),
 )
 

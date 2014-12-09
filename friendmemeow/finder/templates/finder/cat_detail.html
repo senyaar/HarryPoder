@@ -1,18 +1,16 @@
 {% extends 'finder/base.html' %}
+{% block ng_app %}catBrowser{% endblock %}
+{% block ng_controller %}BrowserController{% endblock %}
 
 {% block content %}
-<a class="btn btn-default" href="{% url 'edit_cat' pk=kitty.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
 
-<h1>{{kitty.name}}</h1>
+<h1>{$ cat.name $}</h1>
 <h2> {{ kitty.gender }} | {{kitty.age}} | {{ kitty.breed }} | {{kitty.weight}} lbs </h2>
 
 <h3>About Me!</h3>
 <p> {{kitty.about }}</p><br>
-<b>half your age plus seven rule:</b><br>
-only seeking other cats {{age7}} or older<br>
 
-<b>monthly cost of food</b>: ${{ food_cost | floatformat:"2"}} <br>
-<img src="{{kitty.photo.url}}" width="300" height="300"/>
+<img src="{{kitty.photo}}" width="300" height="300"/>
 <h2>
 <b><u>Contact Info</b></u>
 </h2>
