@@ -4,13 +4,13 @@
 
 {% block content %}
 
-<h1>{$ cat.name $}</h1>
+<h1>{{ kitty.name }}</h1>
 <h2> {{ kitty.gender }} | {{kitty.age}} | {{ kitty.breed }} | {{kitty.weight}} lbs </h2>
 
 <h3>About Me!</h3>
 <p> {{kitty.about }}</p><br>
 
-<img src="{{kitty.photo}}" width="300" height="300"/>
+<img src="{{kitty.photo.url}}" width="300" height="300"/>
 <h2>
 <b><u>Contact Info</b></u>
 </h2>
