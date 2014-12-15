@@ -8,6 +8,7 @@ db.sqlite3
 sqlite3.db
 media/
 datanav/
+node_modules/*
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
