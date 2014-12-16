@@ -8,7 +8,8 @@
 
   app.controller('BrowserController', [
     '$scope', 'Cat', function($scope, Cat) {
-      return $scope.cats = Cat.query();
+      $scope.cats = Cat.query();
+      return $scope.cats;
     }
   ]);
 
@@ -21,8 +22,8 @@
 
   app.factory('Cat', [
     '$resource', function($resource) {
-      return $resource('/api/kitty/:name', {
-        name: '@name'
+      return $resource('/api/kitty/:id', {
+        id: '@id'
       }, {'query': {method: 'GET', isArray: false}});
     }
   ]);
