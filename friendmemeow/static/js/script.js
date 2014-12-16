@@ -13,7 +13,6 @@
     }
   ]);
 
-
 }).call(this);
 
 (function() {
