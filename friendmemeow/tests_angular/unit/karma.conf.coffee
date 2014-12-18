@@ -1,9 +1,13 @@
 module.exports = (config) ->
   config.set
-    basePath: './'
+    basePath: ''
     frameworks: ['jasmine']
     files: [
-      './**/*.coffee'
+      '../../static/bower_components/underscore/underscore.js'
+      '../../static/bower_components/angular/angular.js'
+      '../../static/bower_components/angular-resource/angular-resource.js'
+      './readycats.unittest.coffee'
+      '../../static/js/script.js'
     ]
     exclude: []
     preprocessors: {
@@ -15,7 +19,7 @@ module.exports = (config) ->
     }
     browsers: ['Chrome']
     port: 9876
-    autoWath: true
+    autoWatch: true
     singleRun: true
 
 
