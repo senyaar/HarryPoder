@@ -10,8 +10,8 @@ sqlite3.db
 media/
 datanav/
 node_modules/*
-friendmemeow/static/bower_components/*
-
+*friendmemeow/static/bower_components/*
+*bower_components/*
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
