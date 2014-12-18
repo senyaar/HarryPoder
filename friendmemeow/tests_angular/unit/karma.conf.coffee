@@ -6,6 +6,7 @@ module.exports = (config) ->
       '../../static/bower_components/underscore/underscore.js'
       '../../static/bower_components/angular/angular.js'
       '../../static/bower_components/angular-resource/angular-resource.js'
+      '../../static/bower_components/angular-mocks/angular-mocks.js'
       './readycats.unittest.coffee'
       '../../static/js/script.js'
     ]

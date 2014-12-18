@@ -8,6 +8,7 @@
 
   app.controller('BrowserController', [
     '$scope', 'Cat', function($scope, Cat) {
+      $scope.text = 'Hello Karma!';
       $scope.cats = Cat.query();
       return $scope.cats;
     }
